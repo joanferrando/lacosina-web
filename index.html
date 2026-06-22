@@ -5,51 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Cosina</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Cormorant per textos / Bebas per títols -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Text principal -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Títols -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header class="site-header">
+<!-- ========================================================= -->
+<!-- HEADER -->
+<!-- ========================================================= -->
+
+<header class="header">
 
     <div class="container header-inner">
 
-        <a href="/" class="logo">
-            <img src="img/logo.png" alt="La Cosina">
+        <a href="#" class="logo">
+            <img src="img/logo-la-cosina-negre.png" alt="La Cosina">
         </a>
 
         <nav class="main-nav">
 
-            <a class="active" href="#">INICI</a>
-            <a href="#concerts">CONCERTS</a>
-            <a href="#musica">LA NOSTRA MÚSICA</a>
-            <a href="#videoclips">VIDEOCLIPS</a>
-            <a href="#botiga">BOTIGA</a>
-            <a href="#contacte">CONTACTE</a>
+            <ul>
+
+                <li><a class="active" href="#">Inici</a></li>
+
+                <li><a href="#concerts">Concerts</a></li>
+
+                <li><a href="#musica">La nostra música</a></li>
+
+                <li><a href="#videoclips">Videoclips</a></li>
+
+                <li><a href="#botiga">Botiga</a></li>
+
+                <li><a href="#contacte">Contacte</a></li>
+
+            </ul>
 
         </nav>
 
         <div class="socials">
 
-            <a href="#" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            <a href="#" aria-label="Youtube">
-                <i class="fab fa-youtube"></i>
-            </a>
-
-            <a href="#" aria-label="Spotify">
-                <i class="fab fa-spotify"></i>
-            </a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
 
         </div>
 
@@ -57,417 +60,358 @@
 
 </header>
 
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
 
-<main>
+<section class="hero">
 
-    <!-- ===================================================== -->
-    <!-- HERO -->
-    <!-- ===================================================== -->
+    <img
+        src="img/hero.jpg"
+        alt="La Cosina">
 
-    <section class="hero">
+    <div class="hero-content">
 
-        <div class="hero-top-wave"></div>
+        <p class="hero-pretitle">
+            Ja pots escoltar
+        </p>
 
-        <img
-            class="hero-image"
-            src="img/hero.jpg"
-            alt="La Cosina">
+        <h1>
+            Estem de primera.
+        </h1>
 
-        <div class="hero-content container">
+        <p class="hero-subtitle">
+            Descarrega'l gratis!
+        </p>
 
-            <div class="hero-copy">
+        <a href="#" class="btn btn-gold">
+            ESCOLTA'NS
+        </a>
 
-                <p class="hero-kicker">
-                    Ja pots escoltar
-                </p>
+    </div>
 
-                <h1>
-                    ‘Estem de primera’.
-                </h1>
+</section>
 
-                <p class="hero-subtitle">
-                    Descarrega’l gratis!
-                </p>
+<!-- ========================================================= -->
+<!-- CONCERTS -->
+<!-- ========================================================= -->
 
-                <a href="#" class="btn btn-gold">
-                    ESCOLTA’NS
-                </a>
+<section id="concerts" class="concerts">
 
-            </div>
+    <div class="container concerts-grid">
+
+        <!-- ESQUERRA -->
+
+        <div class="concerts-intro">
+
+            <h2>CONCERTS</h2>
+
+            <div class="section-divider"></div>
+
+            <p>
+                On ens pots veure en directe
+            </p>
+
+            <a href="#" class="btn btn-red">
+                VEURE CALENDARI
+            </a>
 
         </div>
 
-        <div class="hero-circle">
+        <!-- CENTRE -->
 
-            <div class="hero-circle-inner">
+        <div class="concerts-list">
 
-                <p>
-                    Estem de primera: cançons de sempre,
-                    bona companyia i esperit de sobretaula...
-                    Hores vinguin!
-                </p>
+            <article class="concert">
+
+                <div class="date">
+                    <span class="day">25</span>
+                    <span class="month">MAI</span>
+                </div>
+
+                <div class="info">
+                    <h3>Festa Major de Granyena</h3>
+                    <p>Granyena de les Garrigues</p>
+                </div>
+
+            </article>
+
+            <article class="concert">
+
+                <div class="date">
+                    <span class="day">08</span>
+                    <span class="month">JUN</span>
+                </div>
+
+                <div class="info">
+                    <h3>Festa del Vi</h3>
+                    <p>Falset</p>
+                </div>
+
+            </article>
+
+            <article class="concert">
+
+                <div class="date">
+                    <span class="day">21</span>
+                    <span class="month">JUN</span>
+                </div>
+
+                <div class="info">
+                    <h3>Revetlla de Sant Joan</h3>
+                    <p>Cornudella de Montsant</p>
+                </div>
+
+            </article>
+
+            <article class="concert">
+
+                <div class="date">
+                    <span class="day">13</span>
+                    <span class="month">JUL</span>
+                </div>
+
+                <div class="info">
+                    <h3>Festival Terrer</h3>
+                    <p>Tremp</p>
+                </div>
+
+            </article>
+
+            <article class="concert">
+
+                <div class="date">
+                    <span class="day">27</span>
+                    <span class="month">JUL</span>
+                </div>
+
+                <div class="info">
+                    <h3>Festa Major d'Àger</h3>
+                    <p>Àger</p>
+                </div>
+
+            </article>
+
+            <a href="#" class="all-concerts">
+                VEURE TOTS ELS CONCERTS →
+            </a>
+
+        </div>
+
+        <!-- DRETA -->
+
+        <div class="concert-photo">
+
+            <img
+                src="img/concert-festival.jpg"
+                alt="Concert La Cosina">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- MÚSICA / VIDEOCLIPS / BOTIGA -->
+<!-- ========================================================= -->
+
+<section class="featured">
+
+    <div class="container featured-grid">
+
+        <!-- MÚSICA -->
+
+        <article id="musica" class="card music-card">
+
+            <h2>LA NOSTRA MÚSICA</h2>
+
+            <div class="section-divider blue"></div>
+
+            <p>
+                Descarrega gratis els nostres discos
+            </p>
+
+            <div class="albums">
 
                 <img
-                    src="img/gallina.png"
-                    alt="Gallina">
-
-            </div>
-
-        </div>
-
-        <div class="hero-bottom-shape">
-
-            <div class="shape-red"></div>
-            <div class="shape-mustard"></div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- CONCERTS -->
-    <!-- ===================================================== -->
-
-    <section id="concerts" class="concerts">
-
-        <div class="container concerts-grid">
-
-            <div class="concerts-intro">
-
-                <h2>CONCERTS</h2>
-
-                <div class="section-divider">
-                    <span></span>
-                    <img src="img/gallina.png" alt="">
-                    <span></span>
-                </div>
-
-                <p>
-                    On ens pots veure en directe
-                </p>
-
-                <a href="#" class="btn btn-red">
-                    VEURE CALENDARI
-                </a>
-
-            </div>
-
-            <div class="concerts-list">
-
-                <article class="concert-item">
-                    <div class="date">
-                        <span class="day">25</span>
-                        <span class="month">MAI</span>
-                    </div>
-
-                    <div class="info">
-                        <h3>Festa Major de Granyena</h3>
-                        <p>Granyena de les Garrigues</p>
-                    </div>
-                </article>
-
-                <article class="concert-item">
-                    <div class="date">
-                        <span class="day">08</span>
-                        <span class="month">JUN</span>
-                    </div>
-
-                    <div class="info">
-                        <h3>Festa del Vi</h3>
-                        <p>Falset</p>
-                    </div>
-                </article>
-
-                <article class="concert-item">
-                    <div class="date">
-                        <span class="day">21</span>
-                        <span class="month">JUN</span>
-                    </div>
-
-                    <div class="info">
-                        <h3>Revetlla de Sant Joan</h3>
-                        <p>Cornudella de Montsant</p>
-                    </div>
-                </article>
-
-                <article class="concert-item">
-                    <div class="date">
-                        <span class="day">13</span>
-                        <span class="month">JUL</span>
-                    </div>
-
-                    <div class="info">
-                        <h3>Festival Terrer</h3>
-                        <p>Tremp</p>
-                    </div>
-                </article>
-
-                <article class="concert-item">
-                    <div class="date">
-                        <span class="day">27</span>
-                        <span class="month">JUL</span>
-                    </div>
-
-                    <div class="info">
-                        <h3>Festa Major d'Àger</h3>
-                        <p>Àger</p>
-                    </div>
-                </article>
-
-                <a href="#" class="all-concerts">
-                    VEURE TOTS ELS CONCERTS →
-                </a>
-
-            </div>
-
-            <div class="concerts-photo">
-
-                <div class="polaroid">
-
-                    <img
-                        src="img/concert.jpg"
-                        alt="Concert La Cosina">
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- 3 BLOCS -->
-    <!-- ===================================================== -->
-
-    <section class="featured-blocks">
-
-        <div class="block-grid">
-
-            <!-- MUSICA -->
-
-            <article id="musica" class="feature-card">
-
-                <h2 class="blue">
-                    LA NOSTRA MÚSICA
-                </h2>
-
-                <div class="section-divider">
-                    <img src="img/gallina.png" alt="">
-                </div>
-
-                <p>
-                    Descarrega gratis els nostres discos
-                </p>
-
-                <div class="album-grid">
-
-                    <img
-                        src="img/estem-de-primera.jpg"
-                        alt="Estem de primera">
-
-                    <img
-                        src="img/hores-vinguin.jpg"
-                        alt="Hores vinguin">
-
-                </div>
-
-                <a href="#" class="btn btn-blue">
-                    DESCARREGA’LS GRATIS
-                </a>
-
-            </article>
-
-
-            <!-- VIDEOCLIPS -->
-
-            <article id="videoclips" class="feature-card">
-
-                <h2 class="red">
-                    VIDEOCLIPS
-                </h2>
-
-                <div class="section-divider">
-                    <img src="img/gallina.png" alt="">
-                </div>
-
-                <p>
-                    Mira els nostres videoclips
-                </p>
-
-                <div class="video-cover">
-
-                    <img
-                        src="img/JBT05655.jpg"
-                        alt="Videoclip">
-
-                    <button class="play-button">
-                        ▶
-                    </button>
-
-                </div>
-
-                <a href="#" class="btn btn-red">
-                    VEURE VIDEOCLIPS
-                </a>
-
-            </article>
-
-
-            <!-- BOTIGA -->
-
-            <article id="botiga" class="feature-card">
-
-                <h2 class="mustard">
-                    BOTIGA
-                </h2>
-
-                <div class="section-divider">
-                    <img src="img/gallina.png" alt="">
-                </div>
-
-                <p>
-                    Samarretes, discs i més
-                </p>
-
-                <div class="store-preview">
-
-                    <img
-                        src="img/estem-de-primera.jpg"
-                        alt="Disc">
-
-                </div>
-
-                <a href="#" class="btn btn-gold">
-                    ANAR A LA BOTIGA
-                </a>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- CONTACTE -->
-    <!-- ===================================================== -->
-
-    <section id="contacte" class="contact-section">
-
-        <div class="container contact-grid">
-
-            <div class="contact-photo">
-
-                <div class="polaroid">
-
-                    <img
-                        src="img/JBT05078.jpg"
-                        alt="La Cosina">
-
-                </div>
-
-            </div>
-
-            <div class="contact-content">
-
-                <h2>CONTACTE</h2>
-
-                <div class="section-divider">
-                    <img src="img/gallina.png" alt="">
-                </div>
-
-                <p class="contact-lead">
-                    Vols contactar-nos?
-                </p>
-
-                <p>
-                    Escriu-nos i et respondrem ben aviat.
-                </p>
-
-                <ul class="contact-list">
-
-                    <li>
-                        info@lacosina.cat
-                    </li>
-
-                    <li>
-                        635 123 456
-                    </li>
-
-                    <li>
-                        Catalunya
-                    </li>
-
-                </ul>
-
-                <div class="contact-socials">
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">YouTube</a>
-                    <a href="#">Spotify</a>
-                </div>
-
-            </div>
-
-            <div class="contact-illustration">
-
-                <div class="handwritten">
-
-                    <p>
-                        Fem festa,<br>
-                        fem poble,<br>
-                        fem Cosina!
-                    </p>
-
-                </div>
+                    src="img/estem-de-primera.jpg"
+                    alt="Estem de primera">
 
                 <img
-                    class="contact-gallina"
-                    src="img/gallina.png"
-                    alt="Gallina">
+                    src="img/hores-vinguin.jpg"
+                    alt="Hores vinguin">
+
+            </div>
+
+            <a href="#" class="btn btn-blue">
+                DESCARREGA'LS GRATIS
+            </a>
+
+        </article>
+
+        <!-- VIDEOCLIPS -->
+
+        <article id="videoclips" class="card video-card">
+
+            <h2>VIDEOCLIPS</h2>
+
+            <div class="section-divider red"></div>
+
+            <p>
+                Mira els nostres videoclips
+            </p>
+
+            <div class="video-thumb">
+
+                <img
+                    src="img/video-prisma.jpg"
+                    alt="Videoclip">
+
+                <div class="play-button">
+                    ▶
+                </div>
+
+            </div>
+
+            <a href="#" class="btn btn-red">
+                VEURE VIDEOCLIPS
+            </a>
+
+        </article>
+
+        <!-- BOTIGA -->
+
+        <article id="botiga" class="card shop-card">
+
+            <h2>BOTIGA</h2>
+
+            <div class="section-divider gold"></div>
+
+            <p>
+                Samarretes, discs i més
+            </p>
+
+            <div class="shop-products">
+
+                <img
+                    src="img/samarreta.png"
+                    alt="Samarreta">
+
+                <img
+                    src="img/bossa.png"
+                    alt="Bossa">
+
+                <img
+                    src="img/disc-pack.png"
+                    alt="Disc">
+
+            </div>
+
+            <a href="#" class="btn btn-gold">
+                ANAR A LA BOTIGA
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTACTE -->
+<!-- ========================================================= -->
+
+<section id="contacte" class="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-photo">
+
+            <img
+                src="img/grup.jpg"
+                alt="La Cosina">
+
+        </div>
+
+        <div class="contact-info">
+
+            <h2>CONTACTE</h2>
+
+            <div class="section-divider"></div>
+
+            <p>
+                Vols contactar-nos?
+            </p>
+
+            <p>
+                Escriu-nos i et respondrem ben aviat.
+            </p>
+
+            <ul>
+
+                <li>info@lacosina.cat</li>
+
+                <li>635 123 456</li>
+
+                <li>Catalunya</li>
+
+            </ul>
+
+            <div class="contact-socials">
+
+                <a href="#">Instagram</a>
+
+                <a href="#">Facebook</a>
+
+                <a href="#">YouTube</a>
+
+                <a href="#">Spotify</a>
 
             </div>
 
         </div>
 
-    </section>
+        <div class="contact-illustration">
 
-</main>
+            <img
+                src="img/taula-ilustracio.png"
+                alt="Il·lustració">
 
+        </div>
 
-<footer class="site-footer">
+    </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer class="footer">
 
     <div class="container footer-inner">
 
         <div class="footer-brand">
 
             <img
-                src="img/logo.png"
+                src="img/logo-la-cosina-blanc.png"
                 alt="La Cosina">
-
-            <p>
-                Fem festa, fem poble, fem Cosina!
-            </p>
 
         </div>
 
-        <nav class="footer-nav">
+        <div class="footer-links">
 
-            <a href="#">INICI</a>
-            <a href="#">CONCERTS</a>
-            <a href="#">LA NOSTRA MÚSICA</a>
-            <a href="#">VIDEOCLIPS</a>
-            <a href="#">BOTIGA</a>
-            <a href="#">CONTACTE</a>
+            <a href="#">Inici</a>
+            <a href="#">Concerts</a>
+            <a href="#">La nostra música</a>
+            <a href="#">Videoclips</a>
+            <a href="#">Botiga</a>
+            <a href="#">Contacte</a>
 
-        </nav>
+        </div>
 
-        <div class="footer-socials">
-
-            <h3>SEGUEIX-NOS</h3>
+        <div class="footer-social">
 
             <a href="#">Instagram</a>
             <a href="#">YouTube</a>
@@ -480,8 +424,8 @@
 </footer>
 
 <script
-src="https://kit.fontawesome.com/7d5d2f6e58.js"
-crossorigin="anonymous"></script>
+src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js">
+</script>
 
 </body>
 </html>
