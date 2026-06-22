@@ -1,30 +1,6 @@
-/* ==========================================================
-   LA COSINA
-   CSS FIDEL AL DISSENY ORIGINAL
-   ========================================================== */
-
-:root{
-
-    --paper:#efe4d2;
-    --paper-dark:#e6d7c1;
-
-    --red:#a33d32;
-    --red-dark:#8c3127;
-
-    --blue:#3d6d9b;
-    --blue-dark:#30597f;
-
-    --mustard:#c88b2d;
-    --text:#2a221d;
-
-    --line:#d6c3ac;
-
-    --container:1280px;
-}
-
-/* ==========================================================
+/* =======================================================
    RESET
-   ========================================================== */
+======================================================= */
 
 *{
     margin:0;
@@ -37,81 +13,142 @@ html{
 }
 
 body{
-
-    background:var(--paper);
-    color:var(--text);
-
-    font-family:'Cormorant Garamond',serif;
-    font-size:28px;
-    line-height:1.45;
-
+    background:#efe2d1;
+    color:#2b2119;
+    font-family:'Cormorant Garamond', serif;
     overflow-x:hidden;
+}
+
+/* =======================================================
+   VARIABLES
+======================================================= */
+
+:root{
+
+    --paper:#efe2d1;
+    --red:#b44839;
+    --dark-red:#9f382d;
+
+    --blue:#2f5f9f;
+    --gold:#c98a22;
+
+    --text:#2d241d;
+    --line:#d4c2ac;
+
+    --max:1400px;
+}
+
+/* =======================================================
+   GENERALS
+======================================================= */
+
+.container{
+    width:min(92%, var(--max));
+    margin:auto;
 }
 
 img{
     display:block;
-    width:100%;
+    max-width:100%;
 }
 
 a{
     text-decoration:none;
-    color:inherit;
 }
 
-.container{
-    width:min(var(--container),92%);
-    margin:auto;
-}
-
-/* ==========================================================
-   HEADER
-   ========================================================== */
-
-.site-header{
-
+section{
     position:relative;
-    z-index:100;
+}
 
-    background:var(--paper);
+/* =======================================================
+   BOTONS
+======================================================= */
 
-    padding:34px 0 26px;
+.btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 30px;
+
+    font-family:'Bebas Neue', sans-serif;
+    font-size:1.25rem;
+    letter-spacing:1px;
+
+    color:white;
+
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:var(--red);
+}
+
+.btn-red:hover{
+    background:var(--dark-red);
+}
+
+.btn-blue{
+    background:var(--blue);
+}
+
+.btn-gold{
+    background:var(--gold);
+}
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+.header{
+
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:50;
+
+    padding:30px 0;
 }
 
 .header-inner{
 
-    display:grid;
-    grid-template-columns:220px 1fr auto;
-
+    display:flex;
     align-items:center;
-    gap:50px;
+    justify-content:space-between;
 }
 
 .logo img{
     width:180px;
 }
 
-.main-nav{
+.main-nav ul{
 
     display:flex;
-    justify-content:center;
-    gap:54px;
+    gap:42px;
+
+    list-style:none;
 }
 
 .main-nav a{
 
-    font-family:'Oswald',sans-serif;
-    font-size:21px;
-    font-weight:400;
-    letter-spacing:.04em;
+    font-family:'Bebas Neue', sans-serif;
+    font-size:1.25rem;
+    letter-spacing:.5px;
 
-    position:relative;
-
-    transition:.25s;
+    color:#2b2119;
+    text-transform:uppercase;
 }
 
 .main-nav a.active{
 
     color:var(--red);
+    position:relative;
 }
 
 .main-nav a.active::after{
@@ -119,11 +156,12 @@ a{
     content:"";
 
     position:absolute;
+
     left:0;
-    bottom:-12px;
+    bottom:-8px;
 
     width:100%;
-    height:3px;
+    height:2px;
 
     background:var(--red);
 }
@@ -136,297 +174,147 @@ a{
 
 .socials a{
 
-    width:44px;
-    height:44px;
-
-    border-radius:50%;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    font-size:22px;
-
-    background:#111;
-    color:white;
+    color:#111;
+    font-size:1.25rem;
 }
 
-/* ==========================================================
+/* =======================================================
    HERO
-   ========================================================== */
+======================================================= */
 
 .hero{
 
     position:relative;
-    overflow:hidden;
-
-    background:var(--paper);
+    width:100%;
 }
 
-.hero-top-wave{
-
-    position:absolute;
-    top:0;
-    left:0;
+.hero img{
 
     width:100%;
-    height:110px;
-
-    background:var(--blue);
-
-    border-bottom-left-radius:50% 100%;
-    border-bottom-right-radius:50% 100%;
-
-    transform:translateY(-55px);
-
-    z-index:2;
-}
-
-.hero-image{
-
-    width:100%;
-    height:auto;
     display:block;
 }
 
-/* text esquerra */
+/* IMPORTANT:
+   EL FONS CONTINUA EXACTAMENT
+   AMB EL COLOR DEL HERO
+*/
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:-2px;
+
+    height:140px;
+
+    background:#efe2d1;
+
+    z-index:1;
+}
 
 .hero-content{
 
     position:absolute;
 
-    top:170px;
-    left:50%;
+    left:6%;
+    top:26%;
 
-    transform:translateX(-50%);
+    z-index:10;
 
-    width:min(var(--container),92%);
+    max-width:420px;
 }
 
-.hero-copy{
+.hero-pretitle{
 
-    width:420px;
-}
-
-.hero-kicker{
-
-    font-size:68px;
+    font-size:4rem;
     line-height:1;
     margin-bottom:10px;
 }
 
-.hero-copy h1{
+.hero-content h1{
+
+    font-size:5.5rem;
+    line-height:.9;
 
     color:var(--red);
 
-    font-size:92px;
-    line-height:.95;
-
-    font-weight:600;
-
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .hero-subtitle{
 
-    font-size:48px;
-    margin-bottom:32px;
+    font-size:2rem;
+    margin-bottom:30px;
 }
 
-/* cercle dreta */
-
-.hero-circle{
-
-    position:absolute;
-
-    right:110px;
-    top:250px;
-
-    width:270px;
-    height:270px;
-
-    border:4px solid rgba(255,255,255,.9);
-    border-radius:50%;
-
-    z-index:5;
-}
-
-.hero-circle-inner{
-
-    width:100%;
-    height:100%;
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
-
-    color:white;
-
-    padding:35px;
-}
-
-.hero-circle-inner p{
-
-    font-size:27px;
-    line-height:1.25;
-}
-
-.hero-circle-inner img{
-
-    width:48px;
-    margin-top:12px;
-}
-
-/* formes inferiors */
-
-.hero-bottom-shape{
-
-    position:absolute;
-
-    left:0;
-    bottom:0;
-
-    width:100%;
-}
-
-.shape-red{
-
-    height:190px;
-
-    background:var(--red);
-
-    clip-path:polygon(
-        0 35%,
-        100% 0,
-        100% 78%,
-        0 100%
-    );
-}
-
-.shape-mustard{
-
-    height:55px;
-
-    background:var(--mustard);
-
-    clip-path:polygon(
-        0 35%,
-        100% 0,
-        100% 100%,
-        0 100%
-    );
-
-    margin-top:-10px;
-}
-
-/* ==========================================================
-   BOTONS
-   ========================================================== */
-
-.btn{
-
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-
-    height:58px;
-
-    padding:0 34px;
-
-    font-family:'Oswald',sans-serif;
-    font-size:18px;
-    letter-spacing:.06em;
-
-    color:white;
-
-    transition:.25s;
-}
-
-.btn:hover{
-
-    transform:translateY(-2px);
-}
-
-.btn-red{
-    background:var(--red);
-}
-
-.btn-blue{
-    background:var(--blue);
-}
-
-.btn-gold{
-    background:var(--mustard);
-}
-
-/* ==========================================================
+/* =======================================================
    CONCERTS
-   ========================================================== */
+======================================================= */
 
 .concerts{
 
-    padding:85px 0 90px;
+    background:var(--paper);
+
+    padding:90px 0 110px;
 }
 
 .concerts-grid{
 
     display:grid;
-    grid-template-columns:320px 1fr 460px;
+    grid-template-columns:
+    320px
+    1fr
+    420px;
 
-    gap:50px;
+    gap:60px;
+
     align-items:start;
 }
 
 .concerts-intro h2{
 
-    font-family:'Oswald',sans-serif;
-    font-size:92px;
-    line-height:1;
+    font-family:'Bebas Neue', sans-serif;
+    font-size:7rem;
+    letter-spacing:2px;
 
     color:var(--red);
-
-    margin-bottom:25px;
 }
 
 .section-divider{
 
-    display:flex;
-    align-items:center;
-    gap:18px;
-
-    margin-bottom:28px;
-}
-
-.section-divider span{
-
-    width:90px;
+    width:180px;
     height:1px;
 
-    background:#c6b49f;
-}
+    background:var(--line);
 
-.section-divider img{
-
-    width:22px;
+    margin:18px 0 28px;
 }
 
 .concerts-intro p{
 
-    margin-bottom:32px;
+    font-size:2rem;
+    margin-bottom:30px;
 }
 
-.concert-item{
+.concerts-list{
+    width:100%;
+}
+
+.concert{
 
     display:grid;
-    grid-template-columns:80px 1fr;
 
-    gap:30px;
+    grid-template-columns:
+    70px
+    1fr;
 
-    padding:18px 0;
+    gap:28px;
+
+    padding:14px 0;
 
     border-bottom:1px solid var(--line);
 }
@@ -435,7 +323,7 @@ a{
 
     display:block;
 
-    font-size:56px;
+    font-size:3rem;
     line-height:1;
 }
 
@@ -443,111 +331,126 @@ a{
 
     display:block;
 
-    font-family:'Oswald',sans-serif;
-    font-size:18px;
+    font-size:1.2rem;
+    text-transform:uppercase;
 }
 
 .info h3{
 
-    font-size:38px;
-    font-weight:500;
-
-    line-height:1.1;
+    font-size:2rem;
+    font-weight:600;
 }
 
 .info p{
 
-    font-size:26px;
+    font-size:1.4rem;
 }
 
 .all-concerts{
 
     display:inline-block;
 
-    margin-top:25px;
+    margin-top:30px;
 
-    font-family:'Oswald',sans-serif;
     color:var(--red);
-    font-size:20px;
+
+    font-size:1.5rem;
+    font-weight:700;
 }
 
-.polaroid{
-
-    background:white;
-
-    padding:18px;
+.concert-photo{
 
     transform:rotate(-2deg);
-
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
-/* ==========================================================
-   BLOCS CENTRALS
-   ========================================================== */
+.concert-photo img{
 
-.featured-blocks{
+    border:14px solid #f6efe5;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+}
+
+/* =======================================================
+   TRES COLUMNES
+======================================================= */
+
+.featured{
 
     border-top:1px solid var(--line);
     border-bottom:1px solid var(--line);
+
+    background:var(--paper);
 }
 
-.block-grid{
+.featured-grid{
 
     display:grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns:repeat(3,1fr);
 }
 
-.feature-card{
+.card{
 
-    padding:75px 45px 70px;
+    padding:70px 40px;
+
+    min-height:650px;
+
+    border-right:1px solid var(--line);
 
     text-align:center;
 }
 
-.feature-card:not(:last-child){
-
-    border-right:1px solid var(--line);
+.card:last-child{
+    border-right:none;
 }
 
-.feature-card h2{
+.card h2{
 
-    font-family:'Oswald',sans-serif;
-    font-size:68px;
-    line-height:1;
-    margin-bottom:20px;
+    font-family:'Bebas Neue', sans-serif;
+
+    font-size:4.5rem;
+    letter-spacing:1px;
 }
 
-.blue{
+.music-card h2{
     color:var(--blue);
 }
 
-.red{
+.video-card h2{
     color:var(--red);
 }
 
-.mustard{
-    color:var(--mustard);
+.shop-card h2{
+    color:var(--gold);
 }
 
-.feature-card p{
+.card p{
 
+    font-size:1.8rem;
     margin-bottom:35px;
 }
 
-.album-grid{
+.albums{
 
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
+    display:flex;
+    justify-content:center;
+    gap:22px;
 
-    margin-bottom:35px;
+    margin-bottom:40px;
 }
 
-.video-cover{
+.albums img{
+
+    width:180px;
+
+    box-shadow:
+    0 6px 18px rgba(0,0,0,.12);
+}
+
+.video-thumb{
 
     position:relative;
-    margin-bottom:35px;
+    margin-bottom:40px;
 }
 
 .play-button{
@@ -559,163 +462,186 @@ a{
 
     transform:translate(-50%,-50%);
 
-    width:92px;
-    height:92px;
+    width:90px;
+    height:90px;
 
-    border:none;
     border-radius:50%;
 
-    font-size:34px;
-
     background:rgba(255,255,255,.85);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:2rem;
 }
 
-.store-preview{
+.shop-products{
 
-    margin-bottom:35px;
+    display:flex;
+    justify-content:center;
+    align-items:end;
+
+    gap:18px;
+
+    margin-bottom:40px;
 }
 
-/* ==========================================================
+.shop-products img{
+
+    max-height:220px;
+}
+
+/* =======================================================
    CONTACTE
-   ========================================================== */
+======================================================= */
 
-.contact-section{
+.contact{
 
-    padding:90px 0;
+    padding:80px 0;
+
+    background:var(--paper);
 }
 
 .contact-grid{
 
     display:grid;
-    grid-template-columns:420px 380px 1fr;
 
-    gap:60px;
+    grid-template-columns:
+    1.1fr
+    .8fr
+    1.2fr;
+
+    gap:50px;
+
     align-items:center;
 }
 
-.contact-content h2{
+.contact-photo img{
 
-    font-family:'Oswald',sans-serif;
-    font-size:78px;
-    line-height:1;
+    border:12px solid #f6efe5;
 
-    margin-bottom:20px;
+    box-shadow:
+    0 8px 22px rgba(0,0,0,.12);
 }
 
-.contact-lead{
+.contact-info h2{
 
-    font-size:38px;
-    margin-bottom:10px;
+    font-family:'Bebas Neue', sans-serif;
+
+    font-size:5rem;
 }
 
-.contact-list{
+.contact-info p{
+
+    font-size:1.6rem;
+}
+
+.contact-info ul{
 
     list-style:none;
+
     margin-top:25px;
 }
 
-.contact-list li{
+.contact-info li{
 
+    font-size:1.45rem;
     margin-bottom:10px;
 }
 
 .contact-socials{
 
     display:flex;
-    gap:20px;
+    gap:15px;
 
     margin-top:25px;
-
-    font-family:'Oswald',sans-serif;
-    font-size:18px;
 }
 
-.handwritten{
+.contact-socials a{
 
-    font-size:58px;
-    line-height:1;
-
-    transform:rotate(-4deg);
-
-    margin-bottom:30px;
+    color:#111;
+    font-weight:700;
 }
 
-.contact-gallina{
+.contact-illustration img{
 
-    width:90px;
+    width:100%;
 }
 
-/* ==========================================================
+/* =======================================================
    FOOTER
-   ========================================================== */
+======================================================= */
 
-.site-footer{
+.footer{
 
-    background:#141414;
-    color:#d8c6ad;
+    background:#151515;
 
-    padding:55px 0;
+    color:white;
+
+    padding:40px 0;
 }
 
 .footer-inner{
 
-    display:grid;
-    grid-template-columns:1.3fr 1fr 1fr;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-    gap:60px;
+    gap:40px;
 }
 
 .footer-brand img{
 
-    width:160px;
-    margin-bottom:20px;
-
-    filter:brightness(0) invert(1);
+    width:150px;
 }
 
-.footer-nav{
+.footer-links{
 
     display:flex;
-    flex-direction:column;
-    gap:10px;
-
-    font-family:'Oswald',sans-serif;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
-.footer-socials h3{
+.footer-links a,
+.footer-social a{
 
-    font-family:'Oswald',sans-serif;
+    color:white;
 
-    margin-bottom:15px;
+    font-family:'Bebas Neue', sans-serif;
+    font-size:1.1rem;
 }
 
-.footer-socials{
+.footer-social{
 
     display:flex;
-    flex-direction:column;
-    gap:10px;
+    gap:18px;
 }
 
-/* ==========================================================
+/* =======================================================
    RESPONSIVE
-   ========================================================== */
+======================================================= */
 
 @media(max-width:1200px){
 
     .concerts-grid{
+
         grid-template-columns:1fr;
     }
 
-    .block-grid{
+    .featured-grid{
+
         grid-template-columns:1fr;
     }
 
-    .feature-card{
-        border-right:none !important;
+    .card{
+
+        border-right:none;
         border-bottom:1px solid var(--line);
     }
 
     .contact-grid{
+
         grid-template-columns:1fr;
     }
 }
@@ -723,43 +649,41 @@ a{
 @media(max-width:900px){
 
     .header-inner{
-        grid-template-columns:1fr;
-        gap:25px;
-    }
 
-    .main-nav{
-        flex-wrap:wrap;
+        flex-direction:column;
         gap:20px;
     }
 
-    .hero-copy{
-        width:100%;
-        max-width:500px;
+    .hero-content{
+
+        position:relative;
+
+        left:auto;
+        top:auto;
+
+        padding:40px;
+
+        max-width:100%;
     }
 
-    .hero-kicker{
-        font-size:42px;
+    .hero img{
+        min-height:600px;
+        object-fit:cover;
     }
 
-    .hero-copy h1{
-        font-size:64px;
+    .hero-content h1{
+        font-size:4rem;
     }
 
-    .hero-subtitle{
-        font-size:32px;
+    .hero-pretitle{
+        font-size:3rem;
     }
 
-    .hero-circle{
-        display:none;
+    .concerts-intro h2{
+        font-size:5rem;
     }
 
-    .concerts-intro h2,
-    .feature-card h2,
-    .contact-content h2{
-        font-size:52px;
-    }
-
-    body{
-        font-size:22px;
+    .card h2{
+        font-size:3.5rem;
     }
 }
