@@ -1,18 +1,3 @@
-:root{
-
---paper:#efe7d8;
---paper-dark:#e6d9c2;
-
---blue:#4f6bb0;
---red:#a55450;
---mustard:#c49a48;
-
---text:#1d1d1d;
-
---shadow:0 20px 50px rgba(0,0,0,.15);
-
-}
-
 *{
 margin:0;
 padding:0;
@@ -25,372 +10,191 @@ scroll-behavior:smooth;
 
 body{
 
-background:
-radial-gradient(circle at top left, rgba(255,255,255,.3), transparent 40%),
-var(--paper);
-
-color:var(--text);
-
-font-family:"Cormorant Garamond", serif;
-
-overflow-x:hidden;
+background:#f3eadc;
+font-family:'Cormorant Garamond',serif;
+color:#222;
 
 }
 
-/* MENU */
+img{
+max-width:100%;
+display:block;
+}
 
-.menu{
+header{
 
 position:fixed;
-
 top:0;
 left:0;
-right:0;
-
-z-index:999;
+width:100%;
 
 display:flex;
 justify-content:space-between;
 align-items:center;
 
-padding:18px 5vw;
+padding:20px 5%;
 
-background:rgba(239,231,216,.92);
+z-index:1000;
 
+background:rgba(243,234,220,.92);
 backdrop-filter:blur(10px);
-
-border-bottom:1px solid rgba(0,0,0,.08);
 
 }
 
 .logo img{
-height:72px;
+
+width:140px;
+
 }
 
 nav{
+
 display:flex;
-gap:28px;
-flex-wrap:wrap;
+gap:30px;
+
 }
 
 nav a{
 
-font-family:"Oswald",sans-serif;
-
 text-decoration:none;
-
 color:#222;
 
-font-size:.9rem;
+font-family:'Oswald',sans-serif;
+text-transform:uppercase;
 
 letter-spacing:1px;
 
-text-transform:uppercase;
-
-transition:.3s;
-
 }
-
-nav a:hover{
-
-color:var(--red);
-
-}
-
-.tecnic-link{
-
-opacity:.4;
-
-}
-
-/* HERO */
 
 #hero{
 
 position:relative;
 
-height:100vh;
+padding-top:120px;
 
-display:flex;
-align-items:center;
+min-height:100vh;
 
 overflow:hidden;
 
 }
 
-.hero-bg{
-
-position:absolute;
-inset:0;
-
-}
-
-.hero-bg img{
+.hero-image{
 
 width:100%;
-height:100%;
+height:80vh;
+
 object-fit:cover;
 
-filter:saturate(.95);
+border-radius:0 0 60px 60px;
 
 }
 
-.hero-bg::after{
-
-content:"";
+.hero-text{
 
 position:absolute;
-inset:0;
 
-background:
-linear-gradient(
-90deg,
-rgba(239,231,216,.95) 0%,
-rgba(239,231,216,.65) 30%,
-rgba(239,231,216,.05) 70%
-);
+left:8%;
+top:25%;
+
+z-index:10;
+
+max-width:450px;
 
 }
 
-.hero-content{
+.hero-text h1{
 
-position:relative;
-
-z-index:5;
-
-max-width:650px;
-
-padding-left:8vw;
-
-}
-
-.hero-content h1{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:clamp(3.5rem,7vw,6rem);
-
+font-size:4rem;
 line-height:1;
 
-font-weight:500;
-
-max-width:600px;
+font-weight:400;
 
 }
 
-.hero-content h1 span{
+.hero-text span{
 
-display:block;
-
-margin-top:10px;
-
-font-family:"Oswald",sans-serif;
-
-font-size:clamp(4rem,8vw,7rem);
-
-line-height:.9;
-
-text-transform:uppercase;
-
-color:var(--red);
+color:#a73f2f;
+font-weight:700;
 
 }
 
-.hero-content span{
+.hero-text p{
 
-display:block;
-
-color:var(--red);
-
-}
-
-.hero-content p{
-
-margin-top:25px;
-
-font-size:1.6rem;
-
-max-width:500px;
+font-size:1.4rem;
+margin:20px 0;
 
 }
 
-.cta{
+.btn{
 
 display:inline-block;
 
-margin-top:35px;
+padding:14px 28px;
 
-padding:18px 30px;
-
-background:var(--mustard);
+background:#c68c2d;
 
 color:white;
 
 text-decoration:none;
 
-font-family:"Oswald",sans-serif;
+font-family:'Oswald';
 
 letter-spacing:1px;
 
-border-radius:999px;
-
-transition:.3s;
-
 }
 
-.cta:hover{
-
-transform:translateY(-3px);
-
-}
-
-.hero-circle{
+.ampolles{
 
 position:absolute;
 
-right:6vw;
-bottom:8vh;
+bottom:80px;
+left:100px;
 
-width:240px;
-height:240px;
+width:350px;
 
-border-radius:50%;
-
-background:var(--blue);
-
-color:white;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-align-items:center;
-
-text-align:center;
-
-z-index:5;
-
-box-shadow:var(--shadow);
+opacity:.95;
 
 }
-
-.hero-circle p{
-
-font-size:1.4rem;
-
-}
-
-.hero-circle img{
-
-width:70px;
-
-margin-top:10px;
-
-filter:invert(1);
-
-}
-
-/* ONA */
-
-.wave-red{
-
-background:var(--red);
-
-padding:40px;
-
-text-align:center;
-
-position:relative;
-
-}
-
-.wave-red::before{
-
-content:"";
-
-position:absolute;
-
-top:-60px;
-left:0;
-
-width:100%;
-height:120px;
-
-background:var(--paper);
-
-border-bottom-left-radius:50% 100%;
-border-bottom-right-radius:50% 100%;
-
-}
-
-.wave-red img{
-
-width:min(700px,90vw);
-
-position:relative;
-
-z-index:2;
-
-}
-
-/* SECCIONS */
 
 section{
 
-padding:120px 8vw;
+padding:120px 8%;
 
 }
 
-.section-header{
-
-text-align:center;
-
-margin-bottom:60px;
-
-}
-
-.section-header h2,
-.title-block h2{
-
-font-family:"Oswald",sans-serif;
-
-font-size:clamp(2.5rem,5vw,5rem);
-
-text-transform:uppercase;
-
-}
-
-.section-header p,
-.title-block p{
-
-font-size:1.4rem;
-
-opacity:.8;
-
-}
-
-/* CONCERTS */
-
-#concerts{
-
-display:grid;
-
-grid-template-columns:1.1fr .9fr;
-
-gap:70px;
-
-align-items:center;
-
-}
-
-.concerts-list{
+.section-title{
 
 display:flex;
-flex-direction:column;
-gap:25px;
+align-items:center;
+gap:15px;
 
-margin-top:40px;
+margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+font-family:'Oswald';
+
+font-size:4rem;
+
+color:#a73f2f;
+
+}
+
+.section-title img{
+
+width:40px;
+
+}
+
+.concert-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+
+align-items:center;
 
 }
 
@@ -399,67 +203,56 @@ margin-top:40px;
 display:flex;
 gap:25px;
 
-padding:18px;
+padding:20px 0;
 
-background:white;
-
-border-radius:18px;
-
-box-shadow:var(--shadow);
+border-bottom:1px solid #d7c8b6;
 
 }
 
-.date{
+.concert span{
 
-font-family:"Oswald",sans-serif;
+font-family:'Oswald';
 
-font-size:1.5rem;
+font-size:2rem;
 
-color:var(--red);
+color:#a73f2f;
 
-min-width:90px;
+min-width:100px;
+
+}
+
+.concert h3{
+
+font-size:1.7rem;
+
+}
+
+.concert p{
+
+font-size:1.1rem;
 
 }
 
 .concert-photo img{
 
-width:100%;
+border-radius:20px;
 
-border-radius:25px;
-
-box-shadow:var(--shadow);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
 
 }
-
-/* MUSICA */
 
 #musica{
 
-background:linear-gradient(
-180deg,
-var(--paper) 0%,
-#f8f4eb 100%
-);
-
-}
-
-#musica h2{
-
-color:var(--blue);
+background:#f7efe4;
 
 }
 
 .albums{
 
 display:grid;
+grid-template-columns:repeat(2,1fr);
 
-grid-template-columns:1fr 1fr;
-
-gap:60px;
-
-max-width:1200px;
-
-margin:auto;
+gap:40px;
 
 }
 
@@ -471,109 +264,47 @@ text-align:center;
 
 .album img{
 
-width:100%;
+border-radius:12px;
 
-border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,.15);
 
-box-shadow:var(--shadow);
-
-transition:.4s;
-
-}
-
-.album img:hover{
-
-transform:translateY(-10px);
+margin-bottom:20px;
 
 }
 
 .album h3{
 
-margin-top:20px;
-
 font-size:2rem;
 
 }
 
-.album a{
+#galeria{
 
-display:inline-block;
+display:grid;
 
-margin-top:20px;
+grid-template-columns:repeat(3,1fr);
 
-padding:14px 25px;
-
-background:var(--blue);
-
-color:white;
-
-text-decoration:none;
-
-border-radius:999px;
-
-font-family:"Oswald",sans-serif;
+gap:25px;
 
 }
 
-/* VIDEO */
+#galeria img{
 
-#videoclips{
+height:500px;
 
-background:var(--mustard);
+object-fit:cover;
 
-color:white;
+border-radius:20px;
 
-}
-
-.video-card{
-
-position:relative;
-
-max-width:1000px;
-
-margin:auto;
+transition:.3s;
 
 }
 
-.video-card img{
+#galeria img:hover{
 
-width:100%;
-
-border-radius:30px;
-
-box-shadow:var(--shadow);
+transform:translateY(-10px);
 
 }
-
-.play-button{
-
-position:absolute;
-
-inset:0;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-font-size:6rem;
-
-}
-
-/* BOTIGA */
-
-#botiga{
-
-text-align:center;
-
-}
-
-.shop-message{
-
-font-size:2rem;
-
-}
-
-/* CONTACTE */
 
 #contacte{
 
@@ -581,25 +312,15 @@ display:grid;
 
 grid-template-columns:1fr 1fr;
 
-gap:70px;
+gap:60px;
 
 align-items:center;
 
 }
 
-.contact-photo img{
+#contacte h2{
 
-width:100%;
-
-border-radius:25px;
-
-box-shadow:var(--shadow);
-
-}
-
-.contact-info h2{
-
-font-family:"Oswald",sans-serif;
+font-family:'Oswald';
 
 font-size:4rem;
 
@@ -607,7 +328,7 @@ margin-bottom:20px;
 
 }
 
-.contact-info p{
+#contacte p{
 
 font-size:1.5rem;
 
@@ -615,115 +336,82 @@ margin-bottom:15px;
 
 }
 
-/* TECNIC */
+.contacte-foto img{
 
-#tecnic{
-
-opacity:.55;
-
-font-size:.95rem;
-
-padding-top:50px;
+border-radius:20px;
 
 }
-
-#tecnic ul{
-
-padding-left:20px;
-
-}
-
-/* FOOTER */
 
 footer{
 
-background:#171717;
+background:#111;
 
 color:white;
 
-padding:70px 8vw;
+padding:80px 20px;
 
-display:flex;
-
-justify-content:space-between;
-align-items:center;
+text-align:center;
 
 }
 
 footer img{
 
-max-height:80px;
+width:140px;
+
+margin:auto auto 20px;
+
+filter:brightness(0) invert(1);
 
 }
 
-.footer-right img{
+footer p{
 
-opacity:.8;
+font-size:2rem;
 
 }
-
-/* MÒBIL */
 
 @media(max-width:900px){
 
-.menu{
-
-padding:12px 20px;
-
-}
-
-.logo img{
-
-height:50px;
-
-}
-
 nav{
-
-gap:12px;
-
-}
-
-#hero{
-
-height:auto;
-
-padding-top:120px;
-
-}
-
-.hero-content{
-
-padding:40px;
-
-}
-
-.hero-circle{
 
 display:none;
 
 }
 
-#concerts,
-#contacte{
+.hero-text{
+
+position:relative;
+top:auto;
+left:auto;
+
+padding:40px 8%;
+
+}
+
+.hero-text h1{
+
+font-size:3rem;
+
+}
+
+.ampolles{
+
+display:none;
+
+}
+
+.concert-grid,
+#contacte,
+.albums,
+#galeria{
 
 grid-template-columns:1fr;
 
 }
 
-.albums{
+#galeria img{
 
-grid-template-columns:1fr;
-
-}
-
-footer{
-
-flex-direction:column;
-
-gap:30px;
-
-text-align:center;
+height:auto;
 
 }
 
