@@ -1,0 +1,765 @@
+/* ==========================================================
+   LA COSINA
+   CSS FIDEL AL DISSENY ORIGINAL
+   ========================================================== */
+
+:root{
+
+    --paper:#efe4d2;
+    --paper-dark:#e6d7c1;
+
+    --red:#a33d32;
+    --red-dark:#8c3127;
+
+    --blue:#3d6d9b;
+    --blue-dark:#30597f;
+
+    --mustard:#c88b2d;
+    --text:#2a221d;
+
+    --line:#d6c3ac;
+
+    --container:1280px;
+}
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--paper);
+    color:var(--text);
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:28px;
+    line-height:1.45;
+
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(var(--container),92%);
+    margin:auto;
+}
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.site-header{
+
+    position:relative;
+    z-index:100;
+
+    background:var(--paper);
+
+    padding:34px 0 26px;
+}
+
+.header-inner{
+
+    display:grid;
+    grid-template-columns:220px 1fr auto;
+
+    align-items:center;
+    gap:50px;
+}
+
+.logo img{
+    width:180px;
+}
+
+.main-nav{
+
+    display:flex;
+    justify-content:center;
+    gap:54px;
+}
+
+.main-nav a{
+
+    font-family:'Oswald',sans-serif;
+    font-size:21px;
+    font-weight:400;
+    letter-spacing:.04em;
+
+    position:relative;
+
+    transition:.25s;
+}
+
+.main-nav a.active{
+
+    color:var(--red);
+}
+
+.main-nav a.active::after{
+
+    content:"";
+
+    position:absolute;
+    left:0;
+    bottom:-12px;
+
+    width:100%;
+    height:3px;
+
+    background:var(--red);
+}
+
+.socials{
+
+    display:flex;
+    gap:18px;
+}
+
+.socials a{
+
+    width:44px;
+    height:44px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+
+    background:#111;
+    color:white;
+}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.hero{
+
+    position:relative;
+    overflow:hidden;
+
+    background:var(--paper);
+}
+
+.hero-top-wave{
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:110px;
+
+    background:var(--blue);
+
+    border-bottom-left-radius:50% 100%;
+    border-bottom-right-radius:50% 100%;
+
+    transform:translateY(-55px);
+
+    z-index:2;
+}
+
+.hero-image{
+
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* text esquerra */
+
+.hero-content{
+
+    position:absolute;
+
+    top:170px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:min(var(--container),92%);
+}
+
+.hero-copy{
+
+    width:420px;
+}
+
+.hero-kicker{
+
+    font-size:68px;
+    line-height:1;
+    margin-bottom:10px;
+}
+
+.hero-copy h1{
+
+    color:var(--red);
+
+    font-size:92px;
+    line-height:.95;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+}
+
+.hero-subtitle{
+
+    font-size:48px;
+    margin-bottom:32px;
+}
+
+/* cercle dreta */
+
+.hero-circle{
+
+    position:absolute;
+
+    right:110px;
+    top:250px;
+
+    width:270px;
+    height:270px;
+
+    border:4px solid rgba(255,255,255,.9);
+    border-radius:50%;
+
+    z-index:5;
+}
+
+.hero-circle-inner{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:35px;
+}
+
+.hero-circle-inner p{
+
+    font-size:27px;
+    line-height:1.25;
+}
+
+.hero-circle-inner img{
+
+    width:48px;
+    margin-top:12px;
+}
+
+/* formes inferiors */
+
+.hero-bottom-shape{
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+}
+
+.shape-red{
+
+    height:190px;
+
+    background:var(--red);
+
+    clip-path:polygon(
+        0 35%,
+        100% 0,
+        100% 78%,
+        0 100%
+    );
+}
+
+.shape-mustard{
+
+    height:55px;
+
+    background:var(--mustard);
+
+    clip-path:polygon(
+        0 35%,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+
+    margin-top:-10px;
+}
+
+/* ==========================================================
+   BOTONS
+   ========================================================== */
+
+.btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    height:58px;
+
+    padding:0 34px;
+
+    font-family:'Oswald',sans-serif;
+    font-size:18px;
+    letter-spacing:.06em;
+
+    color:white;
+
+    transition:.25s;
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:var(--red);
+}
+
+.btn-blue{
+    background:var(--blue);
+}
+
+.btn-gold{
+    background:var(--mustard);
+}
+
+/* ==========================================================
+   CONCERTS
+   ========================================================== */
+
+.concerts{
+
+    padding:85px 0 90px;
+}
+
+.concerts-grid{
+
+    display:grid;
+    grid-template-columns:320px 1fr 460px;
+
+    gap:50px;
+    align-items:start;
+}
+
+.concerts-intro h2{
+
+    font-family:'Oswald',sans-serif;
+    font-size:92px;
+    line-height:1;
+
+    color:var(--red);
+
+    margin-bottom:25px;
+}
+
+.section-divider{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    margin-bottom:28px;
+}
+
+.section-divider span{
+
+    width:90px;
+    height:1px;
+
+    background:#c6b49f;
+}
+
+.section-divider img{
+
+    width:22px;
+}
+
+.concerts-intro p{
+
+    margin-bottom:32px;
+}
+
+.concert-item{
+
+    display:grid;
+    grid-template-columns:80px 1fr;
+
+    gap:30px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid var(--line);
+}
+
+.day{
+
+    display:block;
+
+    font-size:56px;
+    line-height:1;
+}
+
+.month{
+
+    display:block;
+
+    font-family:'Oswald',sans-serif;
+    font-size:18px;
+}
+
+.info h3{
+
+    font-size:38px;
+    font-weight:500;
+
+    line-height:1.1;
+}
+
+.info p{
+
+    font-size:26px;
+}
+
+.all-concerts{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    font-family:'Oswald',sans-serif;
+    color:var(--red);
+    font-size:20px;
+}
+
+.polaroid{
+
+    background:white;
+
+    padding:18px;
+
+    transform:rotate(-2deg);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+/* ==========================================================
+   BLOCS CENTRALS
+   ========================================================== */
+
+.featured-blocks{
+
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+}
+
+.block-grid{
+
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.feature-card{
+
+    padding:75px 45px 70px;
+
+    text-align:center;
+}
+
+.feature-card:not(:last-child){
+
+    border-right:1px solid var(--line);
+}
+
+.feature-card h2{
+
+    font-family:'Oswald',sans-serif;
+    font-size:68px;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.blue{
+    color:var(--blue);
+}
+
+.red{
+    color:var(--red);
+}
+
+.mustard{
+    color:var(--mustard);
+}
+
+.feature-card p{
+
+    margin-bottom:35px;
+}
+
+.album-grid{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+
+    margin-bottom:35px;
+}
+
+.video-cover{
+
+    position:relative;
+    margin-bottom:35px;
+}
+
+.play-button{
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:92px;
+    height:92px;
+
+    border:none;
+    border-radius:50%;
+
+    font-size:34px;
+
+    background:rgba(255,255,255,.85);
+}
+
+.store-preview{
+
+    margin-bottom:35px;
+}
+
+/* ==========================================================
+   CONTACTE
+   ========================================================== */
+
+.contact-section{
+
+    padding:90px 0;
+}
+
+.contact-grid{
+
+    display:grid;
+    grid-template-columns:420px 380px 1fr;
+
+    gap:60px;
+    align-items:center;
+}
+
+.contact-content h2{
+
+    font-family:'Oswald',sans-serif;
+    font-size:78px;
+    line-height:1;
+
+    margin-bottom:20px;
+}
+
+.contact-lead{
+
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.contact-list{
+
+    list-style:none;
+    margin-top:25px;
+}
+
+.contact-list li{
+
+    margin-bottom:10px;
+}
+
+.contact-socials{
+
+    display:flex;
+    gap:20px;
+
+    margin-top:25px;
+
+    font-family:'Oswald',sans-serif;
+    font-size:18px;
+}
+
+.handwritten{
+
+    font-size:58px;
+    line-height:1;
+
+    transform:rotate(-4deg);
+
+    margin-bottom:30px;
+}
+
+.contact-gallina{
+
+    width:90px;
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.site-footer{
+
+    background:#141414;
+    color:#d8c6ad;
+
+    padding:55px 0;
+}
+
+.footer-inner{
+
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+
+    gap:60px;
+}
+
+.footer-brand img{
+
+    width:160px;
+    margin-bottom:20px;
+
+    filter:brightness(0) invert(1);
+}
+
+.footer-nav{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+    font-family:'Oswald',sans-serif;
+}
+
+.footer-socials h3{
+
+    font-family:'Oswald',sans-serif;
+
+    margin-bottom:15px;
+}
+
+.footer-socials{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media(max-width:1200px){
+
+    .concerts-grid{
+        grid-template-columns:1fr;
+    }
+
+    .block-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-card{
+        border-right:none !important;
+        border-bottom:1px solid var(--line);
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:900px){
+
+    .header-inner{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .main-nav{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .hero-copy{
+        width:100%;
+        max-width:500px;
+    }
+
+    .hero-kicker{
+        font-size:42px;
+    }
+
+    .hero-copy h1{
+        font-size:64px;
+    }
+
+    .hero-subtitle{
+        font-size:32px;
+    }
+
+    .hero-circle{
+        display:none;
+    }
+
+    .concerts-intro h2,
+    .feature-card h2,
+    .contact-content h2{
+        font-size:52px;
+    }
+
+    body{
+        font-size:22px;
+    }
+}
