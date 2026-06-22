@@ -166,13 +166,33 @@ padding-left:8vw;
 
 .hero-content h1{
 
+font-family:"Cormorant Garamond",serif;
+
+font-size:clamp(3.5rem,7vw,6rem);
+
+line-height:1;
+
+font-weight:500;
+
+max-width:600px;
+
+}
+
+.hero-content h1 span{
+
+display:block;
+
+margin-top:10px;
+
 font-family:"Oswald",sans-serif;
 
-font-size:clamp(3rem,8vw,7rem);
+font-size:clamp(4rem,8vw,7rem);
 
-line-height:.95;
+line-height:.9;
 
 text-transform:uppercase;
+
+color:var(--red);
 
 }
 
