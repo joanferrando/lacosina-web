@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>La Cosina</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,140 +19,284 @@
 
 <body>
 
-<header>
+<header class="menu">
 
 <div class="logo">
+
 <img src="img/La cosina.png" alt="La Cosina">
+
 </div>
 
 <nav>
+
 <a href="#hero">Inici</a>
 <a href="#concerts">Concerts</a>
 <a href="#musica">La nostra música</a>
-<a href="#videos">Videoclips</a>
+<a href="#videoclips">Videoclips</a>
 <a href="#botiga">Botiga</a>
 <a href="#contacte">Contacte</a>
-<a class="tecnic-link" href="#tecnic">Tècnic</a>
+<a href="#tecnic" class="tecnic-link">Tècnic</a>
+
 </nav>
 
 </header>
 
+
 <section id="hero">
 
-<img class="hero-photo" src="img/JBT05655.jpg" alt="La Cosina">
+<div class="hero-bg">
 
-<div class="hero-text">
+<img src="img/JBT05655.jpg" alt="La Cosina">
+
+</div>
+
+<div class="hero-content">
 
 <h1>
-Ja pots escoltar<br>
-<span>Estem de primera</span>
+
+Ja pots escoltar
+
+<span>
+Estem de primera
+</span>
+
 </h1>
 
-<p>Descarrega'l gratuïtament.</p>
+<p>
 
-<a href="#musica" class="btn">
-Escolta'l
+Descarrega'l gratuïtament i escolta el nou disc de La Cosina.
+
+</p>
+
+<a href="#musica" class="cta">
+
+ESCOLTA'L
+
 </a>
 
 </div>
 
-<img class="bottles" src="img/ampolles.png" alt="Ampolles">
+<div class="hero-circle">
+
+<p>
+
+Fem festa,
+<br>
+fem poble,
+<br>
+fem Cosina!
+
+</p>
+
+<img src="img/GALLINA-stroke-and-fill.svg">
+
+</div>
 
 </section>
+
+
+<section class="wave-red">
+
+<img src="img/ampolles.png" alt="Ampolles">
+
+</section>
+
 
 <section id="concerts">
 
-<div class="section-title">
+<div class="title-block">
+
 <h2>Concerts</h2>
+
+<p>
+
+On ens pots veure en directe
+
+</p>
+
 </div>
 
-<div class="concerts-grid">
+<div class="concerts-list">
 
-<div>
+<div class="concert">
 
-<p><strong>25 maig</strong><br>
-Granyena de les Garrigues</p>
-
-<p><strong>8 juny</strong><br>
-Falset</p>
-
-<p><strong>21 juny</strong><br>
-Cornudella</p>
-
-<p><strong>13 juliol</strong><br>
-Tremp</p>
-
+<div class="date">
+25 MAI
 </div>
 
 <div>
 
-<img src="img/lacosinaconcert.jpg" alt="Concert">
+<h3>Festa Major de Granyena</h3>
+
+<p>Granyena de les Garrigues</p>
 
 </div>
+
+</div>
+
+<div class="concert">
+
+<div class="date">
+08 JUN
+</div>
+
+<div>
+
+<h3>Festa del Vi</h3>
+
+<p>Falset</p>
+
+</div>
+
+</div>
+
+<div class="concert">
+
+<div class="date">
+21 JUN
+</div>
+
+<div>
+
+<h3>Revetlla de Sant Joan</h3>
+
+<p>Cornudella de Montsant</p>
+
+</div>
+
+</div>
+
+<div class="concert">
+
+<div class="date">
+13 JUL
+</div>
+
+<div>
+
+<h3>Festival Terrer</h3>
+
+<p>Tremp</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="concert-photo">
+
+<img src="img/lacosinaconcert.jpg">
 
 </div>
 
 </section>
 
+
+
 <section id="musica">
+
+<div class="section-header">
 
 <h2>La nostra música</h2>
 
-<p class="subtitle">
+<p>
+
 Descarrega gratuïtament els nostres discos
+
 </p>
+
+</div>
 
 <div class="albums">
 
-<div class="album">
+<article class="album">
 
 <img src="img/la-cosina-estem-de-primera-portada.jpg">
 
 <h3>Estem de primera</h3>
 
 <a href="#">
-Descarregar
+
+Descarregar disc
+
 </a>
 
-</div>
+</article>
 
-<div class="album">
+<article class="album">
 
 <img src="img/la-cosina-hores-vinguin-portada.jpeg">
 
 <h3>Hores vinguin</h3>
 
 <a href="#">
-Descarregar
+
+Descarregar disc
+
 </a>
 
-</div>
+</article>
 
 </div>
 
 </section>
 
-<section id="videos">
+
+
+<section id="videoclips">
+
+<div class="section-header">
 
 <h2>Videoclips</h2>
 
-<div class="video-box">
+<p>
+
+Mira els nostres vídeos
+
+</p>
+
+</div>
+
+<div class="video-card">
 
 <img src="img/JBT05078.jpg">
+
+<div class="play-button">
+
+▶
+
+</div>
 
 </div>
 
 </section>
 
+
+
 <section id="botiga">
+
+<div class="section-header">
 
 <h2>Botiga</h2>
 
 <p>
-Properament samarretes, bosses i discos.
+
+Samarretes, bosses i discs
+
 </p>
 
+</div>
+
+<div class="shop-message">
+
+Properament disponible.
+
+</div>
+
 </section>
+
+
 
 <section id="contacte">
 
@@ -158,45 +306,73 @@ Properament samarretes, bosses i discos.
 
 </div>
 
-<div class="contact-text">
+<div class="contact-info">
 
 <h2>Contacte</h2>
 
 <p>
-Per contractació:
+
+Contractació, festivals, ajuntaments i programació cultural.
+
 </p>
 
 <p>
+
 hola@lacosina.cat
+
 </p>
 
 <p>
+
 Instagram · Spotify · Youtube
+
 </p>
 
 </div>
 
 </section>
 
+
+
 <section id="tecnic">
 
 <h3>Àrea tècnica</h3>
 
-<p>
-Rider tècnic<br>
-Dossier de premsa<br>
-Material gràfic
-</p>
+<ul>
+
+<li>Rider tècnic</li>
+
+<li>Dossier de premsa</li>
+
+<li>Logotips</li>
+
+<li>Fotografies promocionals</li>
+
+</ul>
 
 </section>
 
+
+
 <footer>
 
-<img src="img/GALLINA-stroke-and-fill.svg" alt="Gallina">
+<div class="footer-left">
+
+<img src="img/La cosina.png">
 
 <p>
-La Cosina · Folk d'anar per casa
+
+Folk d'anar per casa.
+
 </p>
+
+</div>
+
+<div class="footer-right">
+
+<img src="img/ampolles.png">
+
+</div>
 
 </footer>
 
