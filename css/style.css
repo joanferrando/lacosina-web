@@ -892,80 +892,256 @@ body{
     }
 }
 
-<!-- ==========================================
-     LA NOSTRA MÚSICA
-========================================== -->
+/* ==========================================
+   LA NOSTRA MÚSICA
+========================================== */
 
-<section id="musica" class="music-section">
+.music-section{
 
-    <div class="music-container">
+    background:rgb(228,206,182);
 
-        <h2>LA NOSTRA MÚSICA</h2>
+    padding:80px 0;
+}
 
-        <p class="music-subtitle">
-            Descarrega gratuïtament els nostres discs
-        </p>
+.music-container{
 
-        <div class="albums-grid">
+    width:min(1200px,90%);
+    margin:auto;
 
-            <!-- ESTEM DE PRIMERA -->
+    text-align:center;
+}
 
-            <article class="album-card">
+/* TÍTOL */
 
-                <img
-                    src="img/estem-de-primera.jpg"
-                    alt="Estem de primera">
+.music-section h2{
 
-                <h3>Estem de primera</h3>
+    font-family:'Oswald',sans-serif;
 
-                <a
-                    href="https://drive.google.com/file/d/1DqG093urEiDBTq1re7PpEB5Ni0F_7r5C/view?usp=sharing"
-                    target="_blank"
-                    class="album-button">
+    color:rgb(53,95,143);
 
-                    DESCARREGA'L
+    font-size:4rem;
 
-                </a>
+    line-height:1;
 
-            </article>
+    margin-bottom:15px;
+}
 
-            <!-- HORES VINGUIN -->
+.music-subtitle{
 
-            <article class="album-card">
+    font-size:1.6rem;
 
-                <img
-                    src="img/hores-vinguin.jpg"
-                    alt="Hores vinguin">
+    margin-bottom:50px;
 
-                <h3>Hores vinguin</h3>
+    color:#2b2119;
+}
 
-                <a
-                    href="https://drive.google.com/file/d/1iga9xffEvfp5M8aEOraWC5jPCrfMLM26/view?usp=sharing"
-                    target="_blank"
-                    class="album-button">
+/* DISCOS */
 
-                    DESCARREGA'L
+.albums-grid{
 
-                </a>
+    display:flex;
 
-            </article>
+    justify-content:center;
 
-        </div>
+    align-items:flex-start;
 
-        <!-- Spotify (ja l'omplirem després) -->
+    gap:90px;
 
-        <div class="spotify-box">
+    flex-wrap:wrap;
 
-            <h3>Escolta'ns a Spotify</h3>
+    margin-bottom:70px;
+}
 
-            <div class="spotify-placeholder">
+.album-card{
 
-                Properament...
+    width:240px;
+}
 
-            </div>
+.album-card img{
 
-        </div>
+    width:100%;
 
-    </div>
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.15);
 
-</section>
+    transition:.3s;
+}
+
+.album-card:hover img{
+
+    transform:translateY(-4px);
+}
+
+.album-card h3{
+
+    margin:22px 0 18px;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:1.8rem;
+
+    text-transform:uppercase;
+
+    color:#2b2119;
+}
+
+/* BOTÓS */
+
+.album-button{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-width:220px;
+
+    padding:16px 30px;
+
+    border:2px solid rgb(53,95,143);
+
+    color:rgb(53,95,143);
+
+    background:transparent;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    letter-spacing:.03em;
+
+    transition:.25s;
+}
+
+.album-button:hover{
+
+    background:rgb(53,95,143);
+
+    color:white;
+}
+
+/* SPOTIFY */
+
+.spotify-box{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,.22);
+
+    border:1px solid rgba(0,0,0,.08);
+
+    border-radius:20px;
+
+    padding:35px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+}
+
+.spotify-left{
+
+    text-align:left;
+}
+
+.spotify-left h3{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:1.7rem;
+
+    margin-bottom:8px;
+}
+
+.spotify-left p{
+
+    font-size:1.15rem;
+}
+
+.spotify-button{
+
+    background:rgb(53,95,143);
+
+    color:white;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    font-family:'Inter',sans-serif;
+
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.spotify-button:hover{
+
+    transform:translateY(-2px);
+
+    background:#27496d;
+}
+
+/* ==========================================
+   MÒBIL
+========================================== */
+
+@media(max-width:768px){
+
+    .music-section{
+
+        padding:60px 0;
+    }
+
+    .music-section h2{
+
+        font-size:2.8rem;
+    }
+
+    .music-subtitle{
+
+        font-size:1.2rem;
+    }
+
+    .albums-grid{
+
+        gap:45px;
+    }
+
+    .album-card{
+
+        width:190px;
+    }
+
+    .album-card h3{
+
+        font-size:1.3rem;
+    }
+
+    .album-button{
+
+        min-width:190px;
+
+        padding:14px 20px;
+    }
+
+    .spotify-box{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .spotify-left{
+
+        text-align:center;
+    }
+}
