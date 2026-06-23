@@ -215,12 +215,23 @@ body{
 /* ========================= */
 /* MÒBIL */
 /* ========================= */
-
 @media(max-width:950px){
 
-    .main-nav{
+    .header-container{
 
-        display:none;
+        position:relative;
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+        background:none;
+        border:none;
+
+        font-size:1.8rem;
+
+        cursor:pointer;
     }
 
     .socials{
@@ -228,22 +239,45 @@ body{
         display:none;
     }
 
-    .menu-toggle{
+    .main-nav{
 
-        display:block;
+        display:none;
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:#e9d4bc;
+
+        border-radius:20px;
+
+        margin-top:12px;
+
+        padding:20px;
+
+        box-shadow:
+        0 10px 30px rgba(0,0,0,.12);
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
     }
 
-    .header-container{
+    .main-nav.active{
 
-        padding:14px 22px;
+        display:flex;
     }
 
     .logo img{
 
-
-        height:50px;
+        height:58px;
     }
-
 
 }
 
