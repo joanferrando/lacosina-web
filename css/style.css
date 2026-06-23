@@ -98,11 +98,11 @@ body{
 
     text-transform:uppercase;
 
-    font-size:1.05rem;
+    font-size:1rem;
 
-    font-weight:600;
+    font-weight:550;
 
-    letter-spacing:.04em;
+    letter-spacing:.03em;
 
     transition:.25s;
 
@@ -243,7 +243,7 @@ body{
 
         .technical-link{
 
-    color:#a9a29a !important;
+    color:#b6aea5 !important;
 }
 
         height:50px;
