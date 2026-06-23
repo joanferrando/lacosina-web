@@ -519,7 +519,7 @@ body{
 
     .intro-section{
 
-        padding:60px 0 80px;
+        padding:50px 0 70px;
     }
 
     .intro-container{
@@ -536,8 +536,8 @@ body{
 
     .intro-text p{
 
-        font-size:1.45rem;
-        line-height:1.6;
+        font-size:1.60rem;
+        line-height:1.1;
     }
 
     .intro-photo{
@@ -548,8 +548,8 @@ body{
 
     .photo-frame{
 
-        width:70%;
-        max-width:280px;
+        width:80%;
+        max-width:300px;
 
         transform:rotate(3deg);
     }
