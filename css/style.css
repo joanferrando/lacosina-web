@@ -318,7 +318,7 @@ body{
     position:absolute;
 
     left:7%;
-    top:40%;
+    top:36%;
 
     transform:translateY(-50%);
 
@@ -339,7 +339,7 @@ body{
 
     color:#241d18;
 
-    margin-bottom:2px;
+    margin-bottom:0.5px;
 }
 
 .hero-overlay h1{
@@ -350,8 +350,8 @@ body{
     color:#963931;
 
     font-size:3.8rem;
-    line-height:0.95;
-    margin-bottom:10px;
+    line-height:1;
+    margin-bottom:6px;
 }
 
 
