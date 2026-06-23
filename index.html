@@ -1,431 +1,60 @@
-<!DOCTYPE html>
-<html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Cosina</title>
+<header class="site-header">
 
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Cormorant per textos / Bebas per títols -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-<!-- ========================================================= -->
-<!-- HEADER -->
-<!-- ========================================================= -->
-
-<header class="header">
-
-    <div class="container header-inner">
+    <div class="header-container">
 
         <a href="#" class="logo">
-            <img src="img/logo.png" alt="La Cosina">
+            <img src="img/logo+gallina.png" alt="La Cosina">
         </a>
 
         <nav class="main-nav">
 
-            <ul>
+            <a href="#inici">
+                <span>🏠</span>
+                Inici
+            </a>
 
-                <li><a class="active" href="#">Inici</a></li>
+            <a href="#concerts">
+                Concerts
+            </a>
 
-                <li><a href="#concerts">Concerts</a></li>
+            <a href="#musica">
+                La nostra música
+            </a>
 
-                <li><a href="#musica">La nostra música</a></li>
+            <a href="#botiga">
+                Botiga
+            </a>
 
-                <li><a href="#videoclips">Videoclips</a></li>
+            <a href="#contacte">
+                Contacte
+            </a>
 
-                <li><a href="#botiga">Botiga</a></li>
-
-                <li><a href="#contacte">Contacte</a></li>
-
-            </ul>
+            <a href="#tecnic">
+                D. Tècnic
+            </a>
 
         </nav>
 
         <div class="socials">
 
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-spotify"></i></a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-spotify"></i>
+            </a>
 
         </div>
+
+        <button class="menu-toggle">
+            ☰
+        </button>
 
     </div>
 
 </header>
-
-<!-- ========================================================= -->
-<!-- HERO -->
-<!-- ========================================================= -->
-
-<section class="hero">
-
-    <img
-        src="img/hero.jpg"
-        alt="La Cosina">
-
-    <div class="hero-content">
-
-        <p class="hero-pretitle">
-            Ja pots escoltar
-        </p>
-
-        <h1>
-            Estem de primera.
-        </h1>
-
-        <p class="hero-subtitle">
-            Descarrega'l gratis!
-        </p>
-
-        <a href="#" class="btn btn-gold">
-            ESCOLTA'NS
-        </a>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- CONCERTS -->
-<!-- ========================================================= -->
-
-<section id="concerts" class="concerts">
-
-    <div class="container concerts-grid">
-
-        <!-- ESQUERRA -->
-
-        <div class="concerts-intro">
-
-            <h2>CONCERTS</h2>
-
-            <div class="section-divider"></div>
-
-            <p>
-                On ens pots veure en directe
-            </p>
-
-            <a href="#" class="btn btn-red">
-                VEURE CALENDARI
-            </a>
-
-        </div>
-
-        <!-- CENTRE -->
-
-        <div class="concerts-list">
-
-            <article class="concert">
-
-                <div class="date">
-                    <span class="day">25</span>
-                    <span class="month">MAI</span>
-                </div>
-
-                <div class="info">
-                    <h3>Festa Major de Granyena</h3>
-                    <p>Granyena de les Garrigues</p>
-                </div>
-
-            </article>
-
-            <article class="concert">
-
-                <div class="date">
-                    <span class="day">08</span>
-                    <span class="month">JUN</span>
-                </div>
-
-                <div class="info">
-                    <h3>Festa del Vi</h3>
-                    <p>Falset</p>
-                </div>
-
-            </article>
-
-            <article class="concert">
-
-                <div class="date">
-                    <span class="day">21</span>
-                    <span class="month">JUN</span>
-                </div>
-
-                <div class="info">
-                    <h3>Revetlla de Sant Joan</h3>
-                    <p>Cornudella de Montsant</p>
-                </div>
-
-            </article>
-
-            <article class="concert">
-
-                <div class="date">
-                    <span class="day">13</span>
-                    <span class="month">JUL</span>
-                </div>
-
-                <div class="info">
-                    <h3>Festival Terrer</h3>
-                    <p>Tremp</p>
-                </div>
-
-            </article>
-
-            <article class="concert">
-
-                <div class="date">
-                    <span class="day">27</span>
-                    <span class="month">JUL</span>
-                </div>
-
-                <div class="info">
-                    <h3>Festa Major d'Àger</h3>
-                    <p>Àger</p>
-                </div>
-
-            </article>
-
-            <a href="#" class="all-concerts">
-                VEURE TOTS ELS CONCERTS →
-            </a>
-
-        </div>
-
-        <!-- DRETA -->
-
-        <div class="concert-photo">
-
-            <img
-                src="img/concert-festival.jpg"
-                alt="Concert La Cosina">
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- MÚSICA / VIDEOCLIPS / BOTIGA -->
-<!-- ========================================================= -->
-
-<section class="featured">
-
-    <div class="container featured-grid">
-
-        <!-- MÚSICA -->
-
-        <article id="musica" class="card music-card">
-
-            <h2>LA NOSTRA MÚSICA</h2>
-
-            <div class="section-divider blue"></div>
-
-            <p>
-                Descarrega gratis els nostres discos
-            </p>
-
-            <div class="albums">
-
-                <img
-                    src="img/estem-de-primera.jpg"
-                    alt="Estem de primera">
-
-                <img
-                    src="img/hores-vinguin.jpg"
-                    alt="Hores vinguin">
-
-            </div>
-
-            <a href="#" class="btn btn-blue">
-                DESCARREGA'LS GRATIS
-            </a>
-
-        </article>
-
-        <!-- VIDEOCLIPS -->
-
-        <article id="videoclips" class="card video-card">
-
-            <h2>VIDEOCLIPS</h2>
-
-            <div class="section-divider red"></div>
-
-            <p>
-                Mira els nostres videoclips
-            </p>
-
-            <div class="video-thumb">
-
-                <img
-                    src="img/video-prisma.jpg"
-                    alt="Videoclip">
-
-                <div class="play-button">
-                    ▶
-                </div>
-
-            </div>
-
-            <a href="#" class="btn btn-red">
-                VEURE VIDEOCLIPS
-            </a>
-
-        </article>
-
-        <!-- BOTIGA -->
-
-        <article id="botiga" class="card shop-card">
-
-            <h2>BOTIGA</h2>
-
-            <div class="section-divider gold"></div>
-
-            <p>
-                Samarretes, discs i més
-            </p>
-
-            <div class="shop-products">
-
-                <img
-                    src="img/samarreta.png"
-                    alt="Samarreta">
-
-                <img
-                    src="img/bossa.png"
-                    alt="Bossa">
-
-                <img
-                    src="img/disc-pack.png"
-                    alt="Disc">
-
-            </div>
-
-            <a href="#" class="btn btn-gold">
-                ANAR A LA BOTIGA
-            </a>
-
-        </article>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- CONTACTE -->
-<!-- ========================================================= -->
-
-<section id="contacte" class="contact">
-
-    <div class="container contact-grid">
-
-        <div class="contact-photo">
-
-            <img
-                src="img/grup.jpg"
-                alt="La Cosina">
-
-        </div>
-
-        <div class="contact-info">
-
-            <h2>CONTACTE</h2>
-
-            <div class="section-divider"></div>
-
-            <p>
-                Vols contactar-nos?
-            </p>
-
-            <p>
-                Escriu-nos i et respondrem ben aviat.
-            </p>
-
-            <ul>
-
-                <li>info@lacosina.cat</li>
-
-                <li>635 123 456</li>
-
-                <li>Catalunya</li>
-
-            </ul>
-
-            <div class="contact-socials">
-
-                <a href="#">Instagram</a>
-
-                <a href="#">Facebook</a>
-
-                <a href="#">YouTube</a>
-
-                <a href="#">Spotify</a>
-
-            </div>
-
-        </div>
-
-        <div class="contact-illustration">
-
-            <img
-                src="img/taula-ilustracio.png"
-                alt="Il·lustració">
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ========================================================= -->
-<!-- FOOTER -->
-<!-- ========================================================= -->
-
-<footer class="footer">
-
-    <div class="container footer-inner">
-
-        <div class="footer-brand">
-
-            <img
-                src="img/logo-la-cosina-blanc.png"
-                alt="La Cosina">
-
-        </div>
-
-        <div class="footer-links">
-
-            <a href="#">Inici</a>
-            <a href="#">Concerts</a>
-            <a href="#">La nostra música</a>
-            <a href="#">Videoclips</a>
-            <a href="#">Botiga</a>
-            <a href="#">Contacte</a>
-
-        </div>
-
-        <div class="footer-social">
-
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-            <a href="#">Spotify</a>
-
-        </div>
-
-    </div>
-
-</footer>
-
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js">
-</script>
-
-</body>
-</html>
