@@ -647,7 +647,7 @@ body{
 
     font-family:'Inter',sans-serif;
 
-    font-size:3.2rem;
+    font-size:2.8rem;
 
     font-weight:550;
 
@@ -676,26 +676,58 @@ body{
 .concert-item{
     display:grid;
     grid-template-columns:140px 1fr;
-    gap:24px;
+    gap:22px;
     align-items:start;
 }
 
 .concert-date{
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:flex-start;
+
     line-height:1;
-    padding-top:4px;
+}
+
+.concert-date .day{
+
+    font-size:2rem;
+    font-weight:700;
+}
+
+.concert-date .month{
+
+    margin-top:2px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
 }
 
 .concert-info h3{
-    margin:0;
-    line-height:1;
+
+    font-size:1.7rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.02em;
+
+    margin-bottom:2px;
 }
 
-.concert-info{
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-}
+.concert-info p{
 
+    font-size:1rem;
+
+    line-height:1.15;
+
+    margin-top:0;
+}
 .concert-item:last-child{
 
     border-bottom:1px solid rgba(255,255,255,.25);
