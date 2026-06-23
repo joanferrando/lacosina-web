@@ -643,14 +643,14 @@ body{
     justify-content:space-between;
     align-items:center;
 
-    margin-bottom:15px;
+    margin-bottom:14px;
 }
 
 .concerts-heading{
 
     display:flex;
     align-items:center;
-    gap:28px;
+    gap:24px;
 }
 
 .concert-polaroid{
@@ -698,7 +698,7 @@ body{
 
     border:1px solid rgba(255,255,255,.35);
 
-    padding:14px 24px;
+    padding:14px 22px;
 
     font-family:
     "Helvetica Neue",
@@ -727,7 +727,7 @@ body{
 
     grid-template-columns:90px 1fr;
 
-    gap:18px;
+    gap:14px;
 
     align-items:start;
 
