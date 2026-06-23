@@ -1,170 +1,130 @@
-/* =======================================================
-   RESET
-======================================================= */
+:root{
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    --header:#e9d5bd;
+    --background:#e5cfb6;
 
-html{
-    scroll-behavior:smooth;
+    --text:#2b2119;
+    --red:#a33d32;
+
+    --shadow:
+    0 8px 30px rgba(0,0,0,.08);
+
 }
 
 body{
-    background:#efe2d1;
-    color:#2b2119;
-    font-family:'Cormorant Garamond', serif;
-    overflow-x:hidden;
+
+    background:var(--background);
+
+    font-family:'Cormorant Garamond',serif;
+
+    padding-top:100px;
 }
 
-/* =======================================================
-   VARIABLES
-======================================================= */
+/* ========================= */
 
-:root{
+.site-header{
 
-    --paper:#efe2d1;
-    --red:#b44839;
-    --dark-red:#9f382d;
+    position:fixed;
 
-    --blue:#2f5f9f;
-    --gold:#c98a22;
+    top:20px;
+    left:50%;
 
-    --text:#2d241d;
-    --line:#d4c2ac;
+    transform:translateX(-50%);
 
-    --max:1400px;
+    width:min(1450px,95vw);
+
+    z-index:9999;
+
+    animation:headerAppear .6s ease;
 }
 
-/* =======================================================
-   GENERALS
-======================================================= */
+.header-container{
 
-.container{
-    width:min(92%, var(--max));
-    margin:auto;
-}
+    background:rgba(233,213,189,.92);
 
-img{
-    display:block;
-    max-width:100%;
-}
+    backdrop-filter:blur(12px);
 
-a{
-    text-decoration:none;
-}
+    border-radius:999px;
 
-section{
-    position:relative;
-}
+    box-shadow:var(--shadow);
 
-/* =======================================================
-   BOTONS
-======================================================= */
+    padding:
 
-.btn{
-
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-
-    padding:14px 30px;
-
-    font-family:'Bebas Neue', sans-serif;
-    font-size:1.25rem;
-    letter-spacing:1px;
-
-    color:white;
-
-    transition:.25s;
-}
-
-.btn:hover{
-    transform:translateY(-2px);
-}
-
-.btn-red{
-    background:var(--red);
-}
-
-.btn-red:hover{
-    background:var(--dark-red);
-}
-
-.btn-blue{
-    background:var(--blue);
-}
-
-.btn-gold{
-    background:var(--gold);
-}
-
-/* =======================================================
-   HEADER
-======================================================= */
-
-.header{
-
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:50;
-
-    padding:30px 0;
-}
-
-.header-inner{
+    16px
+    35px;
 
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
+
+    gap:40px;
 }
+
+/* ========================= */
 
 .logo img{
-    width:180px;
+
+    height:58px;
+    width:auto;
 }
 
-.main-nav ul{
+/* ========================= */
+
+.main-nav{
 
     display:flex;
-    gap:42px;
 
-    list-style:none;
+    align-items:center;
+
+    gap:32px;
 }
 
 .main-nav a{
 
-    font-family:'Bebas Neue', sans-serif;
-    font-size:1.25rem;
-    letter-spacing:.5px;
+    text-decoration:none;
 
-    color:#2b2119;
-    text-transform:uppercase;
-}
+    color:var(--text);
 
-.main-nav a.active{
+    font-size:1.3rem;
 
-    color:var(--red);
+    font-weight:600;
+
+    transition:.25s;
+
     position:relative;
 }
 
-.main-nav a.active::after{
+.main-nav a:hover{
+
+    color:var(--red);
+}
+
+.main-nav a::after{
 
     content:"";
 
     position:absolute;
 
     left:0;
-    bottom:-8px;
+    bottom:-6px;
 
-    width:100%;
+    width:0;
+
     height:2px;
 
     background:var(--red);
+
+    transition:.25s;
 }
+
+.main-nav a:hover::after{
+
+    width:100%;
+}
+
+/* ========================= */
 
 .socials{
 
@@ -174,516 +134,98 @@ section{
 
 .socials a{
 
-    color:#111;
-    font-size:1.25rem;
-}
-
-/* =======================================================
-   HERO
-======================================================= */
-
-.hero{
-
-    position:relative;
-    width:100%;
-}
-
-.hero img{
-
-    width:100%;
-    display:block;
-}
-
-/* IMPORTANT:
-   EL FONS CONTINUA EXACTAMENT
-   AMB EL COLOR DEL HERO
-*/
-
-.hero::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-    right:0;
-    bottom:-2px;
-
-    height:140px;
-
-    background:#efe2d1;
-
-    z-index:1;
-}
-
-.hero-content{
-
-    position:absolute;
-
-    left:6%;
-    top:26%;
-
-    z-index:10;
-
-    max-width:420px;
-}
-
-.hero-pretitle{
-
-    font-size:4rem;
-    line-height:1;
-    margin-bottom:10px;
-}
-
-.hero-content h1{
-
-    font-size:5.5rem;
-    line-height:.9;
-
-    color:var(--red);
-
-    margin-bottom:20px;
-}
-
-.hero-subtitle{
-
-    font-size:2rem;
-    margin-bottom:30px;
-}
-
-/* =======================================================
-   CONCERTS
-======================================================= */
-
-.concerts{
-
-    background:var(--paper);
-
-    padding:90px 0 110px;
-}
-
-.concerts-grid{
-
-    display:grid;
-    grid-template-columns:
-    320px
-    1fr
-    420px;
-
-    gap:60px;
-
-    align-items:start;
-}
-
-.concerts-intro h2{
-
-    font-family:'Bebas Neue', sans-serif;
-    font-size:7rem;
-    letter-spacing:2px;
-
-    color:var(--red);
-}
-
-.section-divider{
-
-    width:180px;
-    height:1px;
-
-    background:var(--line);
-
-    margin:18px 0 28px;
-}
-
-.concerts-intro p{
-
-    font-size:2rem;
-    margin-bottom:30px;
-}
-
-.concerts-list{
-    width:100%;
-}
-
-.concert{
-
-    display:grid;
-
-    grid-template-columns:
-    70px
-    1fr;
-
-    gap:28px;
-
-    padding:14px 0;
-
-    border-bottom:1px solid var(--line);
-}
-
-.day{
-
-    display:block;
-
-    font-size:3rem;
-    line-height:1;
-}
-
-.month{
-
-    display:block;
-
-    font-size:1.2rem;
-    text-transform:uppercase;
-}
-
-.info h3{
-
-    font-size:2rem;
-    font-weight:600;
-}
-
-.info p{
-
-    font-size:1.4rem;
-}
-
-.all-concerts{
-
-    display:inline-block;
-
-    margin-top:30px;
-
-    color:var(--red);
-
-    font-size:1.5rem;
-    font-weight:700;
-}
-
-.concert-photo{
-
-    transform:rotate(-2deg);
-}
-
-.concert-photo img{
-
-    border:14px solid #f6efe5;
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.12);
-}
-
-/* =======================================================
-   TRES COLUMNES
-======================================================= */
-
-.featured{
-
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-
-    background:var(--paper);
-}
-
-.featured-grid{
-
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-}
-
-.card{
-
-    padding:70px 40px;
-
-    min-height:650px;
-
-    border-right:1px solid var(--line);
-
-    text-align:center;
-}
-
-.card:last-child{
-    border-right:none;
-}
-
-.card h2{
-
-    font-family:'Bebas Neue', sans-serif;
-
-    font-size:4.5rem;
-    letter-spacing:1px;
-}
-
-.music-card h2{
-    color:var(--blue);
-}
-
-.video-card h2{
-    color:var(--red);
-}
-
-.shop-card h2{
-    color:var(--gold);
-}
-
-.card p{
-
-    font-size:1.8rem;
-    margin-bottom:35px;
-}
-
-.albums{
-
-    display:flex;
-    justify-content:center;
-    gap:22px;
-
-    margin-bottom:40px;
-}
-
-.albums img{
-
-    width:180px;
-
-    box-shadow:
-    0 6px 18px rgba(0,0,0,.12);
-}
-
-.video-thumb{
-
-    position:relative;
-    margin-bottom:40px;
-}
-
-.play-button{
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    transform:translate(-50%,-50%);
-
-    width:90px;
-    height:90px;
+    width:42px;
+    height:42px;
 
     border-radius:50%;
 
-    background:rgba(255,255,255,.85);
+    background:white;
+
+    color:var(--text);
 
     display:flex;
+
     align-items:center;
     justify-content:center;
+
+    font-size:1.1rem;
+
+    transition:.25s;
+}
+
+.socials a:hover{
+
+    background:var(--red);
+
+    color:white;
+
+    transform:translateY(-2px);
+}
+
+/* ========================= */
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
 
     font-size:2rem;
+
+    cursor:pointer;
 }
 
-.shop-products{
+/* ========================= */
 
-    display:flex;
-    justify-content:center;
-    align-items:end;
+@keyframes headerAppear{
 
-    gap:18px;
+    from{
 
-    margin-bottom:40px;
-}
-
-.shop-products img{
-
-    max-height:220px;
-}
-
-/* =======================================================
-   CONTACTE
-======================================================= */
-
-.contact{
-
-    padding:80px 0;
-
-    background:var(--paper);
-}
-
-.contact-grid{
-
-    display:grid;
-
-    grid-template-columns:
-    1.1fr
-    .8fr
-    1.2fr;
-
-    gap:50px;
-
-    align-items:center;
-}
-
-.contact-photo img{
-
-    border:12px solid #f6efe5;
-
-    box-shadow:
-    0 8px 22px rgba(0,0,0,.12);
-}
-
-.contact-info h2{
-
-    font-family:'Bebas Neue', sans-serif;
-
-    font-size:5rem;
-}
-
-.contact-info p{
-
-    font-size:1.6rem;
-}
-
-.contact-info ul{
-
-    list-style:none;
-
-    margin-top:25px;
-}
-
-.contact-info li{
-
-    font-size:1.45rem;
-    margin-bottom:10px;
-}
-
-.contact-socials{
-
-    display:flex;
-    gap:15px;
-
-    margin-top:25px;
-}
-
-.contact-socials a{
-
-    color:#111;
-    font-weight:700;
-}
-
-.contact-illustration img{
-
-    width:100%;
-}
-
-/* =======================================================
-   FOOTER
-======================================================= */
-
-.footer{
-
-    background:#151515;
-
-    color:white;
-
-    padding:40px 0;
-}
-
-.footer-inner{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    gap:40px;
-}
-
-.footer-brand img{
-
-    width:150px;
-}
-
-.footer-links{
-
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.footer-links a,
-.footer-social a{
-
-    color:white;
-
-    font-family:'Bebas Neue', sans-serif;
-    font-size:1.1rem;
-}
-
-.footer-social{
-
-    display:flex;
-    gap:18px;
-}
-
-/* =======================================================
-   RESPONSIVE
-======================================================= */
-
-@media(max-width:1200px){
-
-    .concerts-grid{
-
-        grid-template-columns:1fr;
+        opacity:0;
+        transform:
+        translateX(-50%)
+        translateY(-15px);
     }
 
-    .featured-grid{
+    to{
 
-        grid-template-columns:1fr;
-    }
-
-    .card{
-
-        border-right:none;
-        border-bottom:1px solid var(--line);
-    }
-
-    .contact-grid{
-
-        grid-template-columns:1fr;
+        opacity:1;
+        transform:
+        translateX(-50%)
+        translateY(0);
     }
 }
 
-@media(max-width:900px){
+/* ========================= */
+/* MÒBIL */
+/* ========================= */
 
-    .header-inner{
+@media(max-width:950px){
 
-        flex-direction:column;
-        gap:20px;
+    .main-nav{
+
+        display:none;
     }
 
-    .hero-content{
+    .socials{
 
-        position:relative;
-
-        left:auto;
-        top:auto;
-
-        padding:40px;
-
-        max-width:100%;
+        display:none;
     }
 
-    .hero img{
-        min-height:600px;
-        object-fit:cover;
+    .menu-toggle{
+
+        display:block;
     }
 
-    .hero-content h1{
-        font-size:4rem;
+    .header-container{
+
+        padding:14px 22px;
     }
 
-    .hero-pretitle{
-        font-size:3rem;
-    }
+    .logo img{
 
-    .concerts-intro h2{
-        font-size:5rem;
-    }
-
-    .card h2{
-        font-size:3.5rem;
+        height:50px;
     }
 }
