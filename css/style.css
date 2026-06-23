@@ -328,33 +328,17 @@ body{
 }
 
 .hero-pretitle{
-
-    font-family:'Cormorant Garamond', serif;
-    font-size:3rem;
-    line-height:1.1;
-    color:#241d18;
-
-    margin-bottom:12px;
+    font-size:2rem;
+    line-height:1.15;
+    margin-bottom:10px;
 }
 
-.hero-line{
 
-    width:140px;
-    height:2px;
-
-    background:#963931;
-
-    margin-bottom:20px;
-}
 
 .hero-sub{
-
-    font-family:'Cormorant Garamond', serif;
-    font-size:2.3rem;
-
-    color:#241d18;
-
-    margin-bottom:12px;
+    font-size:2rem;
+    line-height:1.15;
+    margin-bottom:10px;
 }
 
 .hero-overlay h1{
@@ -364,11 +348,11 @@ body{
 
     color:#963931;
 
-    font-size:5.4rem;
-    line-height:.95;
-
-    margin-bottom:30px;
+    font-size:3.8rem;
+    line-height:0.95;
+    margin-bottom:24px;
 }
+
 
 .hero-button{
 
@@ -402,7 +386,7 @@ body{
 
     background:rgb(228,206,182);
 
-    padding:90px 0 110px;
+    padding:40px 0 90px;
 }
 
 .intro-container{
@@ -426,12 +410,10 @@ body{
 
     font-family:'Cormorant Garamond', serif;
 
-    font-size:2rem;
-    line-height:1.65;
-
     color:#2b241f;
-
-    margin-bottom:34px;
+    font-size:1.2rem;
+    line-height:1.75;
+    margin-bottom:22px;
 }
 
 .intro-text strong{
