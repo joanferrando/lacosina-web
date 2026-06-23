@@ -29,17 +29,12 @@ const proxims = futurs.slice(0,5);
 
             bloc.innerHTML = `
 
-                <div class="concert-date">
-
-                    ${formatDate(concert.data)}
-
-                </div>
-
-                <div class="concert-date">
-    <span class="day">24</span>
-    <span class="month">JUL.</span>
+<div class="concert-date">
+    <span class="day">${dia}</span>
+    <span class="month">${mes}</span>
 </div>
 
+                
                 <div class="concert-info">
 
                     <h3>${concert.poble}</h3>
