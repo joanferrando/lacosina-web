@@ -624,7 +624,7 @@ body{
 
     color:white;
 
-    padding:90px 0;
+    padding:55px 0;
 }
 
 .concerts-container{
@@ -639,16 +639,16 @@ body{
     justify-content:space-between;
     align-items:center;
 
-    margin-bottom:50px;
+    margin-bottom:30px;
 }
 
 .concerts-top h2{
 
     font-family:'Inter',sans-serif;
 
-    font-size:4rem;
+    font-size:3.2rem;
 
-    font-weight:600;
+    font-weight:550;
 
     letter-spacing:.02em;
 }
@@ -683,7 +683,7 @@ body{
 
     gap:40px;
 
-    padding:28px 0;
+        padding:16px 0;
 
     border-top:1px solid rgba(255,255,255,.25);
 }
@@ -735,6 +735,35 @@ body{
     color:white;
 
     border-bottom:1px solid white;
+}
+
+.concerts-heading{
+
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.concert-polaroid{
+
+    width:120px;
+
+    background:#efe2d0;
+
+    padding:10px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 8px 18px rgba(0,0,0,.15);
+
+    transform:rotate(-3deg);
+}
+
+.concert-polaroid img{
+
+    display:block;
+    width:100%;
 }
 
 @media(max-width:900px){
