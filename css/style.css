@@ -318,7 +318,7 @@ body{
     position:absolute;
 
     left:7%;
-    top:36%;
+    top:29%;
 
     transform:translateY(-50%);
 
@@ -350,10 +350,11 @@ body{
     color:#963931;
 
     font-size:3.8rem;
-    line-height:1;
-    margin-bottom:6px;
-}
+    line-height:0.9;
 
+    margin-top:-12px;
+    margin-bottom:8px;
+}
 
 .hero-button{
 
@@ -673,19 +674,26 @@ body{
 }
 
 .concert-item{
-
     display:grid;
+    grid-template-columns:140px 1fr;
+    gap:24px;
+    align-items:start;
+}
 
-    grid-template-columns:
-    140px
-    1fr
-    140px;
+.concert-date{
+    line-height:1;
+    padding-top:4px;
+}
 
-    gap:26px;
+.concert-info h3{
+    margin:0;
+    line-height:1;
+}
 
-        padding:12px 0;
-
-    border-top:1px solid rgba(255,255,255,.25);
+.concert-info{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
 }
 
 .concert-item:last-child{
@@ -693,40 +701,6 @@ body{
     border-bottom:1px solid rgba(255,255,255,.25);
 }
 
-.concert-date{
-
-    font-family:'Inter',sans-serif;
-
-    font-size:1.4rem;
-
-    font-weight:600;
-
-    text-transform:uppercase;
-}
-
-.concert-info h3{
-
-    font-family:'Inter',sans-serif;
-
-    font-size:1.5rem;
-
-    font-weight:600;
-
-    text-transform:uppercase;
-
-    line-height:1;
-
-    margin-bottom:2px;
-}
-
-.concert-info p{
-
-    font-size:1.05rem;
-
-    line-height:1.1;
-
-    margin-bottom:0;
-}
 
 .concert-info span{
 
