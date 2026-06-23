@@ -751,16 +751,16 @@ body{
 
     display:flex;
     align-items:center;
-    gap:28px;
+    gap:24px;
 }
 
 .concert-polaroid{
 
-    width:150px;
+    width:160px;
 
     background:#efe2d0;
 
-    padding:8px;
+    padding:6px;
 
     border:1px solid rgba(255,255,255,.25);
 
