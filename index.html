@@ -19,7 +19,7 @@
 
 </head>
 
-    <script>
+<script>
 
 const toggle =
 document.querySelector('.menu-toggle');
@@ -27,14 +27,40 @@ document.querySelector('.menu-toggle');
 const nav =
 document.querySelector('.main-nav');
 
+const links =
+document.querySelectorAll('.main-nav a');
+
 toggle.addEventListener('click', () => {
 
     nav.classList.toggle('active');
 
+    if(nav.classList.contains('active')){
+
+        toggle.innerHTML =
+        '<i class="fa-solid fa-xmark"></i>';
+
+    }else{
+
+        toggle.innerHTML =
+        '<i class="fa-solid fa-bars"></i>';
+    }
+
+});
+
+links.forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        nav.classList.remove('active');
+
+        toggle.innerHTML =
+        '<i class="fa-solid fa-bars"></i>';
+
+    });
+
 });
 
 </script>
-
 <body>
 
 <header class="site-header">
