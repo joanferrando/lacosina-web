@@ -613,3 +613,153 @@ body{
         font-size:1.25rem;
     }
 }
+
+/* ==========================================
+   CONCERTS
+========================================== */
+
+.concerts-section{
+
+    background:rgb(53,95,143);
+
+    color:white;
+
+    padding:90px 0;
+}
+
+.concerts-container{
+
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+.concerts-top{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:50px;
+}
+
+.concerts-top h2{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:4rem;
+
+    font-weight:600;
+
+    letter-spacing:.02em;
+}
+
+.all-concerts-btn{
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.4);
+
+    padding:14px 24px;
+
+    font-family:'Inter',sans-serif;
+
+    transition:.25s;
+}
+
+.all-concerts-btn:hover{
+
+    background:white;
+    color:rgb(53,95,143);
+}
+
+.concert-item{
+
+    display:grid;
+
+    grid-template-columns:
+    140px
+    1fr
+    140px;
+
+    gap:40px;
+
+    padding:28px 0;
+
+    border-top:1px solid rgba(255,255,255,.25);
+}
+
+.concert-item:last-child{
+
+    border-bottom:1px solid rgba(255,255,255,.25);
+}
+
+.concert-date{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+}
+
+.concert-info h3{
+
+    font-size:2rem;
+
+    margin-bottom:4px;
+}
+
+.concert-info p{
+
+    font-size:1.25rem;
+
+    margin-bottom:4px;
+}
+
+.concert-info span{
+
+    opacity:.75;
+}
+
+.concert-ticket{
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+.concert-ticket a{
+
+    color:white;
+
+    border-bottom:1px solid white;
+}
+
+@media(max-width:900px){
+
+    .concert-item{
+
+        grid-template-columns:1fr;
+
+        gap:12px;
+    }
+
+    .concert-ticket{
+
+        justify-content:flex-start;
+    }
+
+    .concerts-top{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .concerts-top h2{
+
+        font-size:2.8rem;
+    }
+}
