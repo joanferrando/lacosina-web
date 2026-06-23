@@ -1,18 +1,155 @@
 [
-  {
-    "data":"2026-07-12",
-    "poble":"Reus",
-    "event":"Festa Major Alternitva",
-    "adreca":"Plaça de la Patacada",
-    "entrades":"De franc",
-    "link":""
-  },
-  {
-    "data":"2025-07-25",
-    "poble":"Falset",
-    "event":"Festival Terrer",
-    "adreca":"Teatre L'Artesana",
-    "entrades":"Entrades",
-    "link":"https://festival.cat"
-  }
+{
+"data":"2025-11-29",
+"poble":"Reus",
+"event":"Lo Submarino",
+"adreca":"Lo Submarino de Reus",
+"hora":"22:30",
+"entrades":"Pagament",
+"link":""
+},
+{
+"data":"2026-01-15",
+"poble":"Barcelona",
+"event":"Heliogàbal",
+"adreca":"Heliogàbal",
+"hora":"21:00",
+"entrades":"Pagament",
+"link":""
+},
+{
+"data":"2026-03-14",
+"poble":"Castellar del Vallès",
+"event":"Marzenbier",
+"adreca":"Espai Tolrà",
+"hora":"20:00",
+"entrades":"De franc",
+"link":""
+},
+{
+"data":"2026-04-10",
+"poble":"Valls",
+"event":"Sala Redstar",
+"adreca":"",
+"hora":"",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-04-18",
+"poble":"La Riera de Gaià",
+"event":"Super Folk Festival",
+"adreca":"Plaça Major",
+"hora":"19:00",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-05-30",
+"poble":"Amposta",
+"event":"Lo Riu Sona",
+"adreca":"Recinte Firal 1 d'Octubre",
+"hora":"20:25",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-06-05",
+"poble":"Olot",
+"event":"Festa Major",
+"adreca":"Firal Nou",
+"hora":"22:00",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-06-18",
+"poble":"Tarragona",
+"event":"Concert",
+"adreca":"Passeig de les Palmeres",
+"hora":"19:00",
+"entrades":"De franc",
+"link":""
+},
+{
+"data":"2026-06-19",
+"poble":"Reus",
+"event":"Concert propi",
+"adreca":"Casal",
+"hora":"",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-07-24",
+"poble":"Blanes",
+"event":"Festival Esbart",
+"adreca":"",
+"hora":"",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-07-25",
+"poble":"Mataró",
+"event":"Les Santes",
+"adreca":"",
+"hora":"00:00",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-08-05",
+"poble":"Formentera",
+"event":"Festes de Santa Maria",
+"adreca":"",
+"hora":"",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-08-14",
+"poble":"Bausen",
+"event":"Concert propi",
+"adreca":"",
+"hora":"",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-08-15",
+"poble":"Barcelona",
+"event":"Festes de Gràcia - Plaça del Folk",
+"adreca":"Plaça del Sol",
+"hora":"22:00",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-08-25",
+"poble":"Granollers",
+"event":"Blaus",
+"adreca":"",
+"hora":"",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-10-03",
+"poble":"Sant Cugat del Vallès",
+"event":"Petits Camaleons",
+"adreca":"",
+"hora":"",
+"entrades":"",
+"link":""
+},
+{
+"data":"2026-11-28",
+"poble":"Cabrianes",
+"event":"FM Hivern",
+"adreca":"",
+"hora":"",
+"entrades":"",
+"link":""
+}
 ]
