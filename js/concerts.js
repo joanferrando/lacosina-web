@@ -35,6 +35,11 @@ const proxims = futurs.slice(0,5);
 
                 </div>
 
+                <div class="concert-date">
+    <span class="day">24</span>
+    <span class="month">JUL.</span>
+</div>
+
                 <div class="concert-info">
 
                     <h3>${concert.poble}</h3>
