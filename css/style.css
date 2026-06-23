@@ -681,9 +681,9 @@ body{
     1fr
     140px;
 
-    gap:40px;
+    gap:26px;
 
-        padding:16px 0;
+        padding:12px 0;
 
     border-top:1px solid rgba(255,255,255,.25);
 }
@@ -706,16 +706,26 @@ body{
 
 .concert-info h3{
 
-    font-size:2rem;
+    font-family:'Inter',sans-serif;
 
-    margin-bottom:4px;
+    font-size:1.5rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    line-height:1;
+
+    margin-bottom:2px;
 }
 
 .concert-info p{
 
-    font-size:1.25rem;
+    font-size:1.05rem;
 
-    margin-bottom:4px;
+    line-height:1.1;
+
+    margin-bottom:0;
 }
 
 .concert-info span{
@@ -746,11 +756,11 @@ body{
 
 .concert-polaroid{
 
-    width:120px;
+    width:150px;
 
     background:#efe2d0;
 
-    padding:10px;
+    padding:8px;
 
     border:1px solid rgba(255,255,255,.25);
 
