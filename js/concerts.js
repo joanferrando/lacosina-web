@@ -23,6 +23,17 @@ const proxims = futurs.slice(0,5);
 
         proxims.forEach(concert => {
 
+
+            const dataConcert = new Date(concert.data);
+
+const dia = dataConcert.getDate();
+
+const mesos = [
+    "GEN","FEB","MAR","ABR","MAI","JUN",
+    "JUL","AG","SET","OCT","NOV","DES"
+];
+
+const mes = mesos[dataConcert.getMonth()];
             const bloc = document.createElement('div');
 
             bloc.classList.add('concert-item');
