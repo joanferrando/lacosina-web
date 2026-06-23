@@ -1,10 +1,11 @@
 :root{
 
-    --header:#e9d5bd;
+    --header:#e9d4bc;
     --background:#e5cfb6;
-
+    
     --text:#2b2119;
     --red:#a33d32;
+    --active:#963931;
 
     --shadow:
     0 8px 30px rgba(0,0,0,.08);
@@ -38,6 +39,8 @@ body{
     animation:headerAppear .6s ease;
 }
 
+
+
 .header-container{
 
     background:rgba(233,213,189,.92);
@@ -66,7 +69,7 @@ body{
 
 .logo img{
 
-    height:58px;
+    height:67px;
     width:auto;
 }
 
@@ -83,18 +86,29 @@ body{
 
 .main-nav a{
 
+    display:flex;
+    align-items:center;
+    gap:8px;
+
     text-decoration:none;
 
     color:var(--text);
 
-    font-size:1.3rem;
+    font-family:'Inter', Helvetica, Arial, sans-serif;
+
+    text-transform:uppercase;
+
+    font-size:.95rem;
 
     font-weight:600;
+
+    letter-spacing:.08em;
 
     transition:.25s;
 
     position:relative;
 }
+
 
 .main-nav a:hover{
 
@@ -225,6 +239,12 @@ body{
     }
 
     .logo img{
+
+
+        .technical-link{
+
+    color:#8c8c8c !important;
+}
 
         height:50px;
     }
