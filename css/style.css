@@ -289,3 +289,322 @@ body{
 
     color:#8c8c8c !important;
 }
+
+/* ==================================================
+   HERO + PRESENTACIÓ
+   ================================================== */
+
+.hero-section{
+    background: rgb(228,206,182);
+}
+
+/* HERO */
+
+.hero-wrapper{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image{
+    width: 100%;
+    display: block;
+}
+
+/* Text damunt la foto */
+
+.hero-overlay{
+
+    position:absolute;
+
+    left:7%;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    max-width:420px;
+
+    z-index:5;
+}
+
+.hero-pretitle{
+
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+    line-height:1.1;
+    color:#241d18;
+
+    margin-bottom:12px;
+}
+
+.hero-line{
+
+    width:140px;
+    height:2px;
+
+    background:#963931;
+
+    margin-bottom:20px;
+}
+
+.hero-sub{
+
+    font-family:'Cormorant Garamond', serif;
+    font-size:2.3rem;
+
+    color:#241d18;
+
+    margin-bottom:12px;
+}
+
+.hero-overlay h1{
+
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;
+
+    color:#963931;
+
+    font-size:5.4rem;
+    line-height:.95;
+
+    margin-bottom:30px;
+}
+
+.hero-button{
+
+    display:inline-block;
+
+    background:#c88b2d;
+    color:white;
+
+    padding:16px 34px;
+
+    font-family:'Oswald', sans-serif;
+    font-size:1rem;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+
+    transition:.25s;
+}
+
+.hero-button:hover{
+
+    transform:translateY(-2px);
+
+    background:#b67a20;
+}
+
+/* ==================================================
+   PRESENTACIÓ
+   ================================================== */
+
+.intro-section{
+
+    background:rgb(228,206,182);
+
+    padding:90px 0 110px;
+}
+
+.intro-container{
+
+    width:min(1300px,90%);
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:80px;
+}
+
+.intro-text{
+
+    flex:1;
+    max-width:850px;
+}
+
+.intro-text p{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:2rem;
+    line-height:1.65;
+
+    color:#2b241f;
+
+    margin-bottom:34px;
+}
+
+.intro-text strong{
+    color:#963931;
+}
+
+.intro-photo{
+
+    flex:0 0 22%;
+    display:flex;
+    justify-content:center;
+}
+
+.photo-frame{
+
+    background:#efe2d0;
+
+    padding:12px;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+
+    transform:rotate(4deg);
+}
+
+.photo-frame img{
+
+    width:100%;
+    max-width:320px;
+
+    display:block;
+}
+
+/* ==================================================
+   TABLET
+   ================================================== */
+
+@media(max-width:1100px){
+
+    .hero-overlay h1{
+        font-size:4.2rem;
+    }
+
+    .hero-pretitle{
+        font-size:2.4rem;
+    }
+
+    .hero-sub{
+        font-size:2rem;
+    }
+
+    .intro-container{
+        gap:50px;
+    }
+
+    .intro-text p{
+        font-size:1.7rem;
+    }
+}
+
+/* ==================================================
+   MÒBIL
+   ================================================== */
+
+@media(max-width:768px){
+
+    .hero-overlay{
+
+        left:6%;
+        top:50%;
+
+        max-width:280px;
+    }
+
+    .hero-pretitle{
+        font-size:1.9rem;
+    }
+
+    .hero-sub{
+        font-size:1.5rem;
+    }
+
+    .hero-overlay h1{
+
+        font-size:3.3rem;
+
+        margin-bottom:18px;
+    }
+
+    .hero-line{
+        width:90px;
+        margin-bottom:14px;
+    }
+
+    .hero-button{
+
+        padding:12px 22px;
+
+        font-size:.9rem;
+    }
+
+    .intro-section{
+
+        padding:60px 0 80px;
+    }
+
+    .intro-container{
+
+        flex-direction:column;
+
+        gap:50px;
+    }
+
+    .intro-text{
+
+        max-width:100%;
+    }
+
+    .intro-text p{
+
+        font-size:1.45rem;
+        line-height:1.6;
+    }
+
+    .intro-photo{
+
+        width:100%;
+        flex:none;
+    }
+
+    .photo-frame{
+
+        width:70%;
+        max-width:280px;
+
+        transform:rotate(3deg);
+    }
+}
+
+/* ==================================================
+   MÒBIL PETIT
+   ================================================== */
+
+@media(max-width:480px){
+
+    .hero-overlay{
+
+        max-width:230px;
+    }
+
+    .hero-pretitle{
+        font-size:1.5rem;
+    }
+
+    .hero-sub{
+        font-size:1.2rem;
+    }
+
+    .hero-overlay h1{
+        font-size:2.5rem;
+    }
+
+    .hero-button{
+
+        padding:10px 18px;
+
+        font-size:.8rem;
+    }
+
+    .intro-text p{
+
+        font-size:1.25rem;
+    }
+}
