@@ -11,8 +11,15 @@ fetch('data/concerts.json')
         const list =
         document.getElementById('concerts-list');
 
-        const proxims =
-        concerts.slice(0,5);
+const avui = new Date();
+
+const futurs = concerts.filter(concert => {
+
+    return new Date(concert.data) >= avui;
+
+});
+
+const proxims = futurs.slice(0,5);
 
         proxims.forEach(concert => {
 
