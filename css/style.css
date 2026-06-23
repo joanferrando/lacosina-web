@@ -224,15 +224,19 @@ body{
 
     .menu-toggle{
 
-        display:block;
+    display:block;
 
-        background:none;
-        border:none;
+    background:none;
+    border:none;
 
-        font-size:1.8rem;
+    font-size:1.8rem;
 
-        cursor:pointer;
-    }
+    cursor:pointer;
+
+    color:#2b2119;
+
+    transition:.25s ease;
+}
 
     .socials{
 
