@@ -58,7 +58,7 @@ const proxims = futurs.slice(0,5);
 
                         :
 
-                        `<span>De franc</span>`
+                        `<span> </span>`
                     }
 
                 </div>
