@@ -1,1 +1,18 @@
-
+[
+  {
+    "data":"2026-07-12",
+    "poble":"Reus",
+    "event":"Festa Major Alternitva",
+    "adreca":"Plaça de la Patacada",
+    "entrades":"De franc",
+    "link":""
+  },
+  {
+    "data":"2025-07-25",
+    "poble":"Falset",
+    "event":"Festival Terrer",
+    "adreca":"Teatre L'Artesana",
+    "entrades":"Entrades",
+    "link":"https://festival.cat"
+  }
+]
