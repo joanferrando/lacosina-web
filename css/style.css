@@ -318,7 +318,7 @@ body{
     position:absolute;
 
     left:7%;
-    top:20%;
+    top:38%;
 
     transform:translateY(-50%);
 
@@ -327,14 +327,19 @@ body{
     z-index:5;
 }
 
-.hero-pretitle{
-    margin-bottom:2px;
-    line-height:1.05;
-}
+.hero-intro{
 
-.hero-sub{
-    margin-bottom:4px;
-    line-height:1.05;
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:4rem;
+
+    font-weight:500;
+
+    line-height:1;
+
+    color:#241d18;
+
+    margin-bottom:10px;
 }
 
 .hero-overlay h1{
