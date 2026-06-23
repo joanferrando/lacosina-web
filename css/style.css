@@ -728,9 +728,23 @@ body{
 
     margin-top:0;
 }
-.concert-item:last-child{
+.concert-item{
 
-    border-bottom:1px solid rgba(255,255,255,.25);
+    display:grid;
+    grid-template-columns:140px 1fr;
+
+    gap:22px;
+
+    align-items:start;
+
+    padding:18px 0;
+
+    border-top:1px solid rgba(255,255,255,.20);
+}
+
+.concert-item:first-child{
+
+    border-top:none;
 }
 
 
