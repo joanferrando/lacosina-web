@@ -906,7 +906,7 @@ body{
 
     background:rgb(228,206,182);
 
-    padding:80px 0;
+    padding:60px 0;
 }
 
 .music-container{
@@ -980,7 +980,7 @@ body{
 
 .album-card h3{
 
-    margin:20px 0 18px;
+    margin:18px 0 18px;
 
     font-family:'Inter',sans-serif;
 
@@ -990,10 +990,16 @@ body{
 
     color:#2b2119;
 
-    line-height:1.2;
+    line-height:1.15;
 }
 
 .album-card h3 span{
+
+    display:block;
+
+    margin-top:4px;
+
+    font-size:.85rem;
 
     font-weight:400;
 
