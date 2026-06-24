@@ -980,15 +980,24 @@ body{
 
 .album-card h3{
 
-    margin:22px 0 18px;
+    margin:20px 0 18px;
 
     font-family:'Inter',sans-serif;
 
-    font-size:1.8rem;
+    font-size:1.45rem;
 
-    text-transform:uppercase;
+    font-weight:600;
 
     color:#2b2119;
+
+    line-height:1.2;
+}
+
+.album-card h3 span{
+
+    font-weight:400;
+
+    color:#6b6258;
 }
 
 /* BOTÓS */
