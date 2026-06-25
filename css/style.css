@@ -1260,6 +1260,68 @@ transform:rotate(-8deg);
     transition:.25s;
 }
 
+.shop-tooltip{
+
+    position:absolute;
+
+    left:50%;
+    bottom:125px;
+
+    transform:translateX(-50%);
+
+    background:rgba(43,33,25,.92);
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.78rem;
+
+    font-weight:500;
+
+    white-space:nowrap;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.25s ease;
+
+    pointer-events:none;
+}
+
+/* Triangle */
+
+.shop-tooltip::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:100%;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border:6px solid transparent;
+
+    border-top-color:rgba(43,33,25,.92);
+}
+
+/* Mostrar tooltip */
+
+.shop-button:hover .shop-tooltip,
+.shop-button:focus .shop-tooltip{
+
+    opacity:1;
+
+    visibility:visible;
+}
+
 .shop-button:hover{
 
     transform:
