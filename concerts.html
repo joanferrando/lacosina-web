@@ -1,1 +1,230 @@
+<!DOCTYPE html>
+<html lang="ca">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Concerts | La Cosina</title>
+
+<link rel="icon" href="img/favicon.png">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===================================================== -->
+<!-- HEADER -->
+<!-- ===================================================== -->
+
+<header class="site-header">
+
+<div class="header-container">
+
+<a href="index.html" class="logo">
+<img src="img/logo+gallina.png" alt="La Cosina">
+</a>
+
+<nav class="main-nav">
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+Inici
+</a>
+
+<a href="#" class="active">
+Concerts
+</a>
+
+<a href="index.html#musica">
+La nostra música
+</a>
+
+<a href="index.html#botiga">
+Botiga
+</a>
+
+<a href="index.html#contacte">
+Contacte
+</a>
+
+<a href="#" class="technical-link">
+Dossier
+</a>
+
+</nav>
+
+<div class="socials">
+
+<a href="https://www.instagram.com/lacosina_/" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.youtube.com/@lacosina" target="_blank">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+<a href="https://open.spotify.com/artist/2X2BpGXqfZ2lRz9b4ZNw8T" target="_blank">
+<i class="fa-brands fa-spotify"></i>
+</a>
+
+</div>
+
+<button class="menu-toggle">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+</div>
+
+</header>
+
+<!-- ===================================================== -->
+<!-- HERO -->
+<!-- ===================================================== -->
+
+<section class="concerts-page-hero">
+
+<div class="concerts-page-inner">
+
+<p class="back-link">
+<a href="index.html">
+← Tornar a la pàgina principal
+</a>
+</p>
+
+<h1>TOTA LA GIRA</h1>
+
+<p class="concerts-year">
+2025 · 2026
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- LLISTA -->
+<!-- ===================================================== -->
+
+<section class="concerts-page">
+
+<div class="concerts-container">
+
+<div id="concerts-list">
+
+<!-- JS -->
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<div class="footer-column">
+
+<img
+src="img/logo+gallina.png"
+class="footer-logo"
+alt="La Cosina">
+
+</div>
+
+<div class="footer-column">
+
+<h4>Contacte</h4>
+
+<a href="mailto:lacosinagrup@gmail.com">
+lacosinagrup@gmail.com
+</a>
+
+</div>
+
+<div class="footer-column">
+
+<h4>Web</h4>
+
+<a href="index.html">Inici</a>
+<a href="index.html#concerts">Concerts</a>
+<a href="index.html#musica">La nostra música</a>
+<a href="index.html#botiga">Botiga</a>
+<a href="index.html#contacte">Contacte</a>
+
+</div>
+
+<div class="footer-column">
+
+<h4>Segueix-nos</h4>
+
+<div class="footer-socials">
+
+<a href="https://www.instagram.com/lacosina_/" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.youtube.com/@lacosina" target="_blank">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+<a href="https://open.spotify.com/artist/2X2BpGXqfZ2lRz9b4ZNw8T" target="_blank">
+<i class="fa-brands fa-spotify"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 La Cosina · Tots els drets reservats
+
+</div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+<script src="js/concerts-tots.js"></script>
+
+<script>
+
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.main-nav');
+
+toggle.addEventListener('click',()=>{
+
+nav.classList.toggle('active');
+
+toggle.innerHTML=nav.classList.contains('active')
+
+?'<i class="fa-solid fa-xmark"></i>'
+
+:'<i class="fa-solid fa-bars"></i>';
+
+});
+
+</script>
+
+</body>
+
+</html>
