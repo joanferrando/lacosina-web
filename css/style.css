@@ -1521,9 +1521,9 @@ transform:rotate(-8deg);
     1fr
     1fr;
 
-    gap:60px;
+    gap:50px;
 
-    padding:55px 0;
+    padding:45px 0;
 }
 
 .footer-column{
@@ -1554,7 +1554,7 @@ transform:rotate(-8deg);
 
     letter-spacing:.08em;
 
-    margin-bottom:8px;
+    margin-bottom:6px;
 }
 
 .footer-column a{
@@ -1579,7 +1579,7 @@ transform:rotate(-8deg);
 
     gap:16px;
 
-    margin-top:4px;
+    margin-top:3px;
 }
 
 .footer-socials a{
