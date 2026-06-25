@@ -1659,3 +1659,276 @@ transform:rotate(-8deg);
 
     width:100%;
 }
+
+/* ==================================================
+   PÀGINA CONCERTS
+================================================== */
+
+.concerts-page-hero{
+
+    background:rgb(228,206,182);
+
+    padding:160px 0 60px;
+}
+
+.concerts-page-inner{
+
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+.back-link{
+
+    margin-bottom:18px;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.95rem;
+}
+
+.back-link a{
+
+    color:#355f8f;
+
+    text-decoration:none;
+
+    transition:.25s;
+}
+
+.back-link a:hover{
+
+    color:#963931;
+}
+
+.concerts-page-hero h1{
+
+    font-family:'Bebas Neue',sans-serif;
+
+    color:#355f8f;
+
+    font-size:5rem;
+
+    letter-spacing:.03em;
+
+    margin:0;
+}
+
+.concerts-year{
+
+    font-family:'Inter',sans-serif;
+
+    color:#7b6758;
+
+    font-size:1.15rem;
+
+    letter-spacing:.12em;
+
+    margin-top:4px;
+}
+
+/* =============================== */
+
+.concerts-page{
+
+    background:rgb(53,95,143);
+
+    padding:70px 0 90px;
+
+    color:white;
+}
+
+/* any */
+
+.year-title{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    letter-spacing:.05em;
+
+    margin:0 0 28px;
+
+    color:white;
+}
+
+/* fila concert */
+
+.concert-item{
+
+    display:grid;
+
+    grid-template-columns:90px 1fr auto;
+
+    gap:22px;
+
+    align-items:start;
+
+    padding:14px 0;
+
+    border-top:1px solid rgba(255,255,255,.18);
+}
+
+.concert-item:first-of-type{
+
+    border-top:none;
+}
+
+/* data */
+
+.concert-date{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    line-height:.9;
+}
+
+.day{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:2.5rem;
+
+    font-weight:700;
+}
+
+.month{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    margin-top:3px;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+}
+
+/* informació */
+
+.concert-info h3{
+
+    margin:0;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:1.35rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+}
+
+.concert-info p{
+
+    margin:3px 0;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.95rem;
+}
+
+.concert-info span{
+
+    display:block;
+
+    opacity:.75;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.85rem;
+}
+
+/* entrades */
+
+.ticket{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-end;
+}
+
+.ticket a{
+
+    color:white;
+
+    text-decoration:none;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-family:'Inter',sans-serif;
+
+    transition:.25s;
+}
+
+.ticket a:hover{
+
+    background:white;
+
+    color:#355f8f;
+}
+
+/* etiqueta gratuït */
+
+.ticket span{
+
+    font-family:'Inter',sans-serif;
+
+    opacity:.75;
+}
+
+/* =============================== */
+
+@media(max-width:900px){
+
+    .concerts-page-hero{
+
+        padding:130px 0 45px;
+    }
+
+    .concerts-page-hero h1{
+
+        font-size:3.4rem;
+    }
+
+    .concert-item{
+
+        grid-template-columns:70px 1fr;
+
+        gap:14px;
+    }
+
+    .ticket{
+
+        grid-column:2;
+
+        justify-content:flex-start;
+
+        margin-top:8px;
+    }
+
+    .day{
+
+        font-size:2rem;
+    }
+
+    .concert-info h3{
+
+        font-size:1.1rem;
+    }
+}
