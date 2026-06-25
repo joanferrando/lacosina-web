@@ -1932,3 +1932,112 @@ transform:rotate(-8deg);
         font-size:1.1rem;
     }
 }
+
+/* ==========================================
+   DOSSIER
+========================================== */
+
+.press-section{
+
+    background:rgb(228,206,182);
+
+    padding:28px 0;
+}
+
+.press-container{
+
+    width:min(1200px,90%);
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+}
+
+.press-container h2{
+
+    font-family:'Bebas Neue',sans-serif;
+
+    font-size:2.5rem;
+
+    color:#355f8f;
+
+    letter-spacing:.03em;
+
+    margin:0;
+}
+
+.press-links{
+
+    display:flex;
+
+    gap:26px;
+
+    flex-wrap:wrap;
+}
+
+.press-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    background:white;
+
+    color:#355f8f;
+
+    text-decoration:none;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.95rem;
+
+    transition:.25s;
+}
+
+.press-link i{
+
+    font-size:1.1rem;
+}
+
+.press-link:hover{
+
+    background:#355f8f;
+
+    color:white;
+
+    transform:translateY(-2px);
+}
+
+@media(max-width:900px){
+
+    .press-container{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    .press-links{
+
+        width:100%;
+
+        flex-direction:column;
+    }
+
+    .press-link{
+
+        justify-content:center;
+    }
+
+}
