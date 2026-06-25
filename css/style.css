@@ -1045,49 +1045,91 @@ body{
 
 /* SPOTIFY */
 
-.spotify-box{
+.media-box{
 
-    max-width:1000px;
+    max-width:950px;
 
     margin:auto;
 
     background:rgba(255,255,255,.22);
 
-    border:1px solid rgba(0,0,0,.08);
+    border-radius:22px;
 
-    border-radius:20px;
+    padding:40px;
 
-    padding:35px 40px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    gap:40px;
+    text-align:center;
 }
 
-.spotify-left{
-
-    text-align:left;
-}
-
-.spotify-left h3{
+.media-box h3{
 
     font-family:'Inter',sans-serif;
 
-    font-size:1.7rem;
+    font-size:1.6rem;
 
-    margin-bottom:8px;
+    margin-bottom:30px;
+
+    color:#2b2119;
 }
 
-.spotify-left p{
+.media-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+}
+
+.video-card{
+
+    width:300px;
+
+    text-decoration:none;
+
+    color:#2b2119;
+}
+
+.video-card img{
+
+    width:100%;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.15);
+
+    transition:.25s;
+}
+
+.video-card:hover img{
+
+    transform:translateY(-4px);
+}
+
+.video-card span{
+
+    display:block;
+
+    margin-top:14px;
+
+    font-family:'Inter',sans-serif;
 
     font-size:1.15rem;
+
+    font-weight:600;
 }
 
 .spotify-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
 
     background:rgb(53,95,143);
 
@@ -1106,11 +1148,10 @@ body{
 
 .spotify-button:hover{
 
+    background:#2c5180;
+
     transform:translateY(-2px);
-
-    background:#27496d;
 }
-
 /* ==========================================
    MÒBIL
 ========================================== */
