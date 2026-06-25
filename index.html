@@ -323,12 +323,17 @@
         alt="Botiga La Cosina"
         class="shop-image">
 
-    <a href="#"
-       class="shop-button">
+<a href="javascript:void(0)"
+   class="shop-button"
+   aria-label="Botiga">
 
-        <i class="fa-solid fa-bag-shopping"></i>
+    <i class="fa-solid fa-bag-shopping"></i>
 
-    </a>
+    <span class="shop-tooltip">
+        Disponible aviat
+    </span>
+
+</a>
 
 </section>
 
@@ -378,6 +383,30 @@ links.forEach(link => {
         '<i class="fa-solid fa-bars"></i>';
 
     });
+
+});
+
+</script>
+
+    <script>
+
+const shopButton = document.querySelector('.shop-button');
+
+shopButton.addEventListener('click', function(e){
+
+    e.preventDefault();
+
+    const tooltip = this.querySelector('.shop-tooltip');
+
+    tooltip.style.opacity = "1";
+    tooltip.style.visibility = "visible";
+
+    setTimeout(() => {
+
+        tooltip.style.opacity = "0";
+        tooltip.style.visibility = "hidden";
+
+    }, 1800);
 
 });
 
