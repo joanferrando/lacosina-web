@@ -906,7 +906,7 @@ body{
 
     background:rgb(228,206,182);
 
-    padding:60px 0;
+    padding:50px 0;
 }
 
 .music-container{
@@ -955,7 +955,7 @@ body{
 
     flex-wrap:wrap;
 
-    margin-bottom:60px;
+    margin-bottom:40px;
 }
 
 .album-card{
@@ -1066,7 +1066,7 @@ body{
 
     font-size:1.6rem;
 
-    margin-bottom:30px;
+    margin-bottom:15px;
 
     color:#2b2119;
 }
