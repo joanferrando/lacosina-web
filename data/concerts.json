@@ -27,11 +27,11 @@
 "link":""
 },
 {
-"data":"2026-04-10",
-"poble":"Valls",
-"event":"Sala Redstar",
+"data":"2026-03-7",
+"poble":"La Pobla de Segur",
+"event":"Cerveseria C13",
 "adreca":"",
-"hora":"",
+"hora":"20:00",
 "entrades":"",
 "link":""
 },
@@ -65,7 +65,7 @@
 {
 "data":"2026-06-18",
 "poble":"Tarragona",
-"event":"Concert",
+"event":"Final de curs CMT",
 "adreca":"Passeig de les Palmeres",
 "hora":"19:00",
 "entrades":"De franc",
@@ -74,19 +74,19 @@
 {
 "data":"2026-06-19",
 "poble":"Reus",
-"event":"Concert propi",
-"adreca":"Casal",
-"hora":"",
+"event":"FMA - Festa Major Alterntiva",
+"adreca":"Plaça Patacada",
+"hora":"21:00",
 "entrades":"",
 "link":""
 },
 {
 "data":"2026-07-24",
 "poble":"Blanes",
-"event":"Festival Esbart",
+"event":"Esbart",
 "adreca":"",
 "hora":"",
-"entrades":"--",
+"entrades":"-",
 "link":""
 },
 {
@@ -110,8 +110,8 @@
 {
 "data":"2026-08-14",
 "poble":"Bausen",
-"event":"Properament",
-"adreca":"",
+"event":"",
+"adreca":"Vall d'Aran",
 "hora":"",
 "entrades":"--",
 "link":""
@@ -129,6 +129,15 @@
 "data":"2026-08-25",
 "poble":"Granollers",
 "event":"Blaus",
+"adreca":"",
+"hora":"",
+"entrades":"",
+"link":""
+},
+  {
+"data":"2026-09-10",
+"poble":"Cambrils",
+"event":"",
 "adreca":"",
 "hora":"",
 "entrades":"",
