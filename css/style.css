@@ -397,18 +397,18 @@ body{
 
     background:rgb(228,206,182);
 
-    padding:28px 0 65px;
+    padding:18px 0 55px;
 }
 
 .intro-container{
 
-    width:min(1300px,90%);
+    width:min(1300px,94%);
     margin:auto;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:80px;
+    gap:50px;
 }
 
 .intro-text{
@@ -423,13 +423,13 @@ body{
 
     color:#2b241f;
 
-    font-size:1.32rem;
+    font-size:1.4rem;
 
     font-weight:500;
 
-    line-height:1.65;
+    line-height:1.6;
 
-    margin-bottom:18px;
+    margin-bottom:16px;
 }
 
 .intro-text strong{
@@ -911,7 +911,7 @@ body{
 
     background:rgb(228,206,182);
 
-    padding:50px 0;
+    padding:35px 0;
 }
 
 .music-container{
@@ -934,7 +934,7 @@ body{
 
     line-height:1;
 
-    margin-bottom:10px;
+    margin-bottom:9px;
 }
 
 .music-subtitle{
@@ -1521,9 +1521,9 @@ transform:rotate(-8deg);
     1fr
     1fr;
 
-    gap:50px;
+    gap:35px;
 
-    padding:45px 0;
+    padding:35px 0;
 }
 
 .footer-column{
@@ -1532,12 +1532,12 @@ transform:rotate(-8deg);
 
     flex-direction:column;
 
-    gap:12px;
+    gap:8px;
 }
 
 .footer-logo{
 
-    width:170px;
+    width:160px;
 
     filter:brightness(0) invert(1);
 
